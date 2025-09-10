@@ -39,8 +39,21 @@ function makeCard(c) {
     const cardContent = document.createElement("div");
     cardContent.id = "card-content";
     cardContent.innerHTML = `<h3>${c.title}</h3><p">${c.instructor}</p>`;
-    // card.innerHTML = `<img src="${imgPath(c.image)}" alt="${c.title}"><div class="title">${c.title}</div><div class="muted" style="color:var(--muted);font-size:13px">${c.instructor}</div>`;
+
+    const tagPrice = document.createElement("div");
+    tagPrice.id = "tag-price";
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.id = "badge";
+    badge.innerHTML = c.level;
+    tagPrice.append(badge);
+    const price = document.createElement("span");
+    price.id = "price";
+    price.innerHTML = c.price;
+    tagPrice.append(price);
+
     card.append(banner);
     card.append(cardContent);
+    card.append(tagPrice);
     return card;
 }
