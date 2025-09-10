@@ -1,0 +1,41 @@
+#carousel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.slide {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 95%;
+    padding: 5% 5%;
+    border-radius: 12px;
+    background-color: #f3f4f6;
+}
+
+.slide.active {
+    display: flex;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.slide .thumb {
+    flex: 1;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9eefb;
+    overflow: hidden
+}
+
+.slide .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}

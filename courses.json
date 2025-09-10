@@ -1,0 +1,145 @@
+[
+  {
+    "slug": "react-development",
+    "title": "Complete React Development",
+    "short": "Build modern React apps with hooks, routing and best practices.",
+    "description": "A practical course covering React fundamentals to advanced patterns, with projects.",
+    "instructor": "Sarah Johnson",
+    "level": "Beginner",
+    "duration": "24 hours",
+    "price": "$89",
+    "category": "Web Development",
+    "image": "react.jpg",
+    "tags": [
+      "react",
+      "javascript",
+      "web"
+    ],
+    "curriculum": [
+      "React basics",
+      "Hooks & state",
+      "Routing",
+      "Build projects",
+      "Deployment"
+    ]
+  },
+  {
+    "slug": "python-data",
+    "title": "Python for Data Essentials",
+    "short": "Learn Python, pandas and basic data analysis workflows.",
+    "description": "Hands-on Python for data tasks: cleaning, visualization and small projects.",
+    "instructor": "Amit Verma",
+    "level": "Beginner",
+    "duration": "18 hours",
+    "price": "$69",
+    "category": "Data",
+    "image": "python.jpg",
+    "tags": [
+      "python",
+      "data",
+      "pandas"
+    ],
+    "curriculum": [
+      "Python basics",
+      "pandas",
+      "Data cleaning",
+      "Visualization",
+      "Mini project"
+    ]
+  },
+  {
+    "slug": "ml-foundations",
+    "title": "AI / Machine Learning Foundations",
+    "short": "Intro to ML concepts, models and workflows.",
+    "description": "Understand supervised learning, feature engineering and model evaluation.",
+    "instructor": "Dr. Meera Singh",
+    "level": "Intermediate",
+    "duration": "30 hours",
+    "price": "$129",
+    "category": "AI / ML",
+    "image": "ml.jpg",
+    "tags": [
+      "ml",
+      "ai",
+      "machine learning"
+    ],
+    "curriculum": [
+      "Linear models",
+      "Decision trees",
+      "Evaluation",
+      "Feature engineering",
+      "Project"
+    ]
+  },
+  {
+    "slug": "data-science",
+    "title": "Data Science Practical",
+    "short": "Data pipelines, analysis and storytelling with data.",
+    "description": "From raw data to insight \u2014 practical workflows and case studies.",
+    "instructor": "Rohan Patel",
+    "level": "Intermediate",
+    "duration": "36 hours",
+    "price": "$149",
+    "category": "Data Science",
+    "image": "datasci.jpg",
+    "tags": [
+      "data science",
+      "etl",
+      "analysis"
+    ],
+    "curriculum": [
+      "Data pipelines",
+      "Exploratory analysis",
+      "Modeling",
+      "Presentation"
+    ]
+  },
+  {
+    "slug": "web-fullstack",
+    "title": "Fullstack Web Development",
+    "short": "Frontend + backend fundamentals to build full web apps.",
+    "description": "Learn HTML, CSS, JS, and backend basics to launch apps end-to-end.",
+    "instructor": "Nisha Kapoor",
+    "level": "All levels",
+    "duration": "40 hours",
+    "price": "$159",
+    "category": "Web Development",
+    "image": "webdev.jpg",
+    "tags": [
+      "web",
+      "fullstack",
+      "javascript"
+    ],
+    "curriculum": [
+      "HTML & CSS",
+      "JavaScript",
+      "Backend basics",
+      "APIs",
+      "Deploy"
+    ]
+  },
+  {
+    "slug": "ui-ux",
+    "title": "UI / UX Design Fundamentals",
+    "short": "Design interfaces that are usable and beautiful.",
+    "description": "Principles of UI/UX and practical prototyping workflows.",
+    "instructor": "Sara Lee",
+    "level": "Beginner",
+    "duration": "20 hours",
+    "price": "$79",
+    "category": "Design",
+    "image": "uiux.jpg",
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "figma"
+    ],
+    "curriculum": [
+      "Design thinking",
+      "Wireframing",
+      "Prototyping",
+      "Usability testing"
+    ]
+  }
+]

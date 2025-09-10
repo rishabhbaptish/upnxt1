@@ -1,0 +1,36 @@
+@import url("header.css");
+@import url("carousel.css");
+@import url("sections.css");
+
+:root {
+    --bg: #ffffff;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --accent: #2563eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: #111;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
