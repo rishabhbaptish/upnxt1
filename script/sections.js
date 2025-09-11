@@ -3,6 +3,7 @@ function addSections() {
     main.id = "section-wrapper";
     document.querySelector("#main").append(main);
     addTrending();
+    addAllCourses();
 }
 
 async function addTrending() {
@@ -25,6 +26,26 @@ async function addTrending() {
     document.querySelector("#section-wrapper").append(trending);
 }
 
+async function addAllCourses() {
+    const trending = document.createElement("section");
+    const headingSection = document.createElement("div");
+    headingSection.id = "section-heading";
+    const heading = document.createElement("div");
+    heading.innerHTML = `<h2>All Courses</h2><p>Most popular courses this week</p>`;
+    headingSection.append(heading);
+    trending.append(headingSection);
+    const courses = await fetchCourses();
+    const row = document.createElement("div");
+    row.className = "courses-row";
+
+    courses.forEach(c => {
+        let card = makeCard(c);
+        row.append(card);
+    });
+    trending.append(row)
+    document.querySelector("#section-wrapper").append(trending);
+}
+
 function makeCard(c) {
     const card = document.createElement('div');
     card.className = 'card';
@@ -36,6 +57,8 @@ function makeCard(c) {
     img.alt = c.title;
     banner.append(img);
 
+    const cardContentWrapper = document.createElement("div");
+    cardContentWrapper.id = "card-content-wrapper";
     const cardContent = document.createElement("div");
     cardContent.id = "card-content";
     cardContent.innerHTML = `<h3>${c.title}</h3><p">${c.instructor}</p>`;
@@ -52,8 +75,17 @@ function makeCard(c) {
     price.innerHTML = c.price;
     tagPrice.append(price);
 
+    const enroll = document.createElement("button");
+    enroll.id = "enroll";
+    enroll.className = "button1";
+    enroll.textContent = "Enroll Now";
+
+    cardContentWrapper.append(cardContent);
+    cardContentWrapper.append(tagPrice);
+    cardContentWrapper.append(enroll);
     card.append(banner);
-    card.append(cardContent);
-    card.append(tagPrice);
+    card.append(cardContentWrapper);
+    // card.append(tagPrice);
+    // card.append(enroll);
     return card;
 }
