@@ -11,11 +11,14 @@
 function addHeader() {
     const header = document.querySelector(".site-header");
     const logo = document.createElement("div");
+    logo.addEventListener("click", () => {
+      window.location.href = '/';
+    })
     logo.className = "logo";
     logo.innerHTML = `<span class="text-black">upn<span class="text-blue">X</span>t</span>`;
     const nav = document.createElement("nav");
     nav.className = "nav";
-    nav.innerHTML = `<a href="index.html" class="active">Home</a>
+    nav.innerHTML = `<a href="/" class="active">Home</a>
       <a href="#trending">Trending</a>
       <a href="#courses">Community</a>`;
     header.append(logo);

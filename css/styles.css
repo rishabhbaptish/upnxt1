@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("carousel.css");
 @import url("sections.css");
+@import url("course.css");
 
 :root {
     --bg: #ffffff;
@@ -45,4 +46,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+}
+
+.site-footer{
+    margin-top: 2rem;
 }

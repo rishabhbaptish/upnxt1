@@ -26,7 +26,7 @@ function renderCarousel(courses) {
       <div class="meta">
         <h1>${c.title}</h1>
         <p>${c.short}</p>
-        <a class="cta" href="course.html?id=${c.slug}">View Course</a>
+        <a class="cta" href="./course/?id=${c.id}">View Course</a>
       </div>
       <div class="thumb"><img src="${imgPath(c.image)}" alt="${c.title}"></div>
     `;

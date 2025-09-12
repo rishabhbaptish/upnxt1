@@ -14,7 +14,8 @@
 
 .logo {
     font-weight: 700;
-    font-size: 20px
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .text-black {

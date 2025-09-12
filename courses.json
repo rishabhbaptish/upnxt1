@@ -1,19 +1,29 @@
 [
   {
-    "slug": "react-development",
+    "id": "01",
     "title": "Complete React Development",
     "short": "Build modern React apps with hooks, routing and best practices.",
-    "description": "A practical course covering React fundamentals to advanced patterns, with projects.",
+    "description": "A practical course covering React fundamentals to advanced patterns, with projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "instructor": "Sarah Johnson",
+    "language": "English",
     "level": "Beginner",
     "duration": "24 hours",
     "price": "$89",
     "category": "Web Development",
     "image": "react.jpg",
     "tags": [
-      "react",
-      "javascript",
-      "web"
+      "React",
+      "Javascript",
+      "Web"
+    ],
+    "outcomes": [
+      "Master Python programming from a data science perspective",
+      "Perform powerful data analysis using Pandas and NumPy",
+      "Create stunning data visualizations with Matplotlib and Seaborn",
+      "Understand and apply core statistics and probability concepts",
+      "Clean and preprocess real-world datasets for accurate insights",
+      "Work on real-life projects",
+      "Use Jupyter Notebooks for data-driven development"
     ],
     "curriculum": [
       "React basics",
@@ -24,20 +34,30 @@
     ]
   },
   {
-    "slug": "python-data",
+    "id": "02",
     "title": "Python for Data Essentials",
     "short": "Learn Python, pandas and basic data analysis workflows.",
-    "description": "Hands-on Python for data tasks: cleaning, visualization and small projects.",
+    "description": "Hands-on Python for data tasks: cleaning, visualization and small projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "instructor": "Amit Verma",
+    "language": "Hindi",
     "level": "Beginner",
     "duration": "18 hours",
     "price": "$69",
     "category": "Data",
     "image": "python.jpg",
     "tags": [
-      "python",
-      "data",
-      "pandas"
+      "Python",
+      "Data",
+      "Pandas"
+    ],
+    "outcomes": [
+      "Master Python programming from a data science perspective",
+      "Perform powerful data analysis using Pandas and NumPy",
+      "Create stunning data visualizations with Matplotlib and Seaborn",
+      "Understand and apply core statistics and probability concepts",
+      "Clean and preprocess real-world datasets for accurate insights",
+      "Work on real-life projects",
+      "Use Jupyter Notebooks for data-driven development"
     ],
     "curriculum": [
       "Python basics",
@@ -48,20 +68,30 @@
     ]
   },
   {
-    "slug": "ml-foundations",
+    "id": "03",
     "title": "AI / Machine Learning Foundations",
     "short": "Intro to ML concepts, models and workflows.",
-    "description": "Understand supervised learning, feature engineering and model evaluation.",
+    "description": "Understand supervised learning, feature engineering and model evaluation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "instructor": "Dr. Meera Singh",
+    "language": "Hindi",
     "level": "Intermediate",
     "duration": "30 hours",
     "price": "$129",
     "category": "AI / ML",
     "image": "ml.jpg",
     "tags": [
-      "ml",
-      "ai",
-      "machine learning"
+      "Hot & New",
+      "ML",
+      "AI"
+    ],
+    "outcomes": [
+      "Master Python programming from a data science perspective",
+      "Perform powerful data analysis using Pandas and NumPy",
+      "Create stunning data visualizations with Matplotlib and Seaborn",
+      "Understand and apply core statistics and probability concepts",
+      "Clean and preprocess real-world datasets for accurate insights",
+      "Work on real-life projects",
+      "Use Jupyter Notebooks for data-driven development"
     ],
     "curriculum": [
       "Linear models",
@@ -72,20 +102,30 @@
     ]
   },
   {
-    "slug": "data-science",
+    "id": "04",
     "title": "Data Science Practical",
     "short": "Data pipelines, analysis and storytelling with data.",
-    "description": "From raw data to insight \u2014 practical workflows and case studies.",
+    "description": "From raw data to insight \u2014 practical workflows and case studies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "instructor": "Rohan Patel",
+    "language": "English",
     "level": "Intermediate",
     "duration": "36 hours",
     "price": "$149",
     "category": "Data Science",
     "image": "datasci.jpg",
     "tags": [
-      "data science",
-      "etl",
-      "analysis"
+      "Data Science",
+      "ETL",
+      "Analysis"
+    ],
+    "outcomes": [
+      "Master Python programming from a data science perspective",
+      "Perform powerful data analysis using Pandas and NumPy",
+      "Create stunning data visualizations with Matplotlib and Seaborn",
+      "Understand and apply core statistics and probability concepts",
+      "Clean and preprocess real-world datasets for accurate insights",
+      "Work on real-life projects",
+      "Use Jupyter Notebooks for data-driven development"
     ],
     "curriculum": [
       "Data pipelines",
@@ -95,20 +135,30 @@
     ]
   },
   {
-    "slug": "web-fullstack",
+    "id": "05",
     "title": "Fullstack Web Development",
     "short": "Frontend + backend fundamentals to build full web apps.",
-    "description": "Learn HTML, CSS, JS, and backend basics to launch apps end-to-end.",
+    "description": "Learn HTML, CSS, JS, and backend basics to launch apps end-to-end. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "instructor": "Nisha Kapoor",
+    "language": "Telugu",
     "level": "All levels",
     "duration": "40 hours",
     "price": "$159",
     "category": "Web Development",
     "image": "webdev.jpg",
     "tags": [
-      "web",
-      "fullstack",
-      "javascript"
+      "Web",
+      "Fullstack",
+      "Javascript"
+    ],
+    "outcomes": [
+      "Master Python programming from a data science perspective",
+      "Perform powerful data analysis using Pandas and NumPy",
+      "Create stunning data visualizations with Matplotlib and Seaborn",
+      "Understand and apply core statistics and probability concepts",
+      "Clean and preprocess real-world datasets for accurate insights",
+      "Work on real-life projects",
+      "Use Jupyter Notebooks for data-driven development"
     ],
     "curriculum": [
       "HTML & CSS",
@@ -119,21 +169,31 @@
     ]
   },
   {
-    "slug": "ui-ux",
+    "id": "06",
     "title": "UI / UX Design Fundamentals",
     "short": "Design interfaces that are usable and beautiful.",
-    "description": "Principles of UI/UX and practical prototyping workflows.",
+    "description": "Principles of UI/UX and practical prototyping workflows. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "instructor": "Sara Lee",
+    "language": "Telugu",
     "level": "Beginner",
     "duration": "20 hours",
     "price": "$79",
     "category": "Design",
     "image": "uiux.jpg",
     "tags": [
-      "design",
-      "ui",
-      "ux",
-      "figma"
+      "Design",
+      "UI",
+      "UX",
+      "Figma"
+    ],
+    "outcomes": [
+      "Master Python programming from a data science perspective",
+      "Perform powerful data analysis using Pandas and NumPy",
+      "Create stunning data visualizations with Matplotlib and Seaborn",
+      "Understand and apply core statistics and probability concepts",
+      "Clean and preprocess real-world datasets for accurate insights",
+      "Work on real-life projects",
+      "Use Jupyter Notebooks for data-driven development"
     ],
     "curriculum": [
       "Design thinking",
