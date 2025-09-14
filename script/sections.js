@@ -46,13 +46,13 @@ async function addAllCourses() {
     document.querySelector("#section-wrapper").append(trending);
 }
 
-function makeCard(c) {
+function makeCard(c,route = 0) {
     const card = document.createElement('div');
     card.className = 'card';
-
+    const add = route == 1 ? '../' : './';
     // Create link wrapper for clickable parts
     const link = document.createElement('a');
-    link.href = `/course/?id=${c.id}`;
+    link.href = `${add}course/?id=${c.id}`;
     link.className = 'card-link';
 
     // Banner

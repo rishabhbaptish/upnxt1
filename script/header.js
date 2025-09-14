@@ -13,10 +13,7 @@ function addHeader(index = 0) {
   const logo = document.createElement("div");
   const add = index == 1 ? '../' : './';
   logo.addEventListener("click", () => {
-    if (index == 1)
-      window.location.href = add;
-    else
-      window.location.href = add;
+    window.location.href = add;
   })
   logo.className = "logo";
   logo.innerHTML = `<span class="text-black">upn<span class="text-blue">X</span>t</span>`;
