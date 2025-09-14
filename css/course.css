@@ -7,7 +7,7 @@
     height: 100%;
     padding: 7% 10%;
     padding-bottom: 4%;
-    color: white;
+    color: var(--bg);
     background-color: var(--accent);
 }
 
@@ -26,6 +26,12 @@
     display: flex;
     width: 100%;
     gap: 2%;
+    align-items: center;
+}
+
+#tag-wrapper a {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #foot-note {
@@ -42,14 +48,15 @@
     height: 100%;
     padding: 5%;
     gap: 2%;
+    padding-bottom: 0;
 }
 
 #box {
     border-radius: 1rem;
-    border: 1px solid #ddd;
-    color: #333;
+    border: 1px solid var(--grey);
+    color: var(--dark);
     margin-bottom: 3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 #box-header {
@@ -59,32 +66,178 @@
     padding: 1.5rem;
 }
 
-#box-content{
+#box-content {
     padding: 1.5rem;
     padding-top: 0;
 }
 
-#box-grid{
+#box-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-#grid-item{
+#grid-item {
     display: flex;
     gap: 0.75rem;
 }
 
-#grid-item span{
+#grid-item span {
     font-size: 0.875rem;
 }
 
-#grid-item svg{
-    height: 1.25rem;
-    width: 1.25rem;
+#grid-item svg {
+    height: 1rem;
+    width: 1rem;
     color: var(--accent);
+    margin-top: 0.2em;
+    flex-shrink: 0;
 }
 
-#text-section{
+#text-section {
     min-width: 68%;
+}
+
+#course-promo {
+    width: 100%;
+    cursor: default;
+    padding-bottom: 0%;
+
+    &:hover {
+        box-shadow: var(--shadow);
+    }
+}
+
+#box-content1 {
+    padding: 1.5rem 1.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--grey);
+    border-radius: 1rem;
+    height: 100%;
+    box-shadow: var(--shadow);
+}
+
+div.c {
+    position: relative;
+}
+
+input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: 0;
+}
+
+.head {
+    padding: 1% 2%;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div.p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: var(--bg);
+    font-size: 14px;
+    padding-left: 3%;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+}
+
+div.p p {
+    padding: 1.5%;
+}
+
+
+input:checked~h3~div.p {
+    max-height: fit-content;
+    line-height: 1.5;
+}
+
+.icon-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 2%;
+    flex: 1;
+    width: fit-content;
+}
+
+.icon-title svg {
+    height: 20px;
+    width: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark);
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.price .original {
+    text-decoration: line-through;
+    margin-left: 0.75rem;
+    color: var(--dark-grey);
+}
+
+#enroll-main {
+    margin-bottom: 4%;
+    width: 95%;
+    color: var(--bg);
+    background-color: var(--accent);
+
+    &:hover {
+        background-color: var(--hover-accent);
+    }
+}
+
+#card-content svg {
+    width: 16px;
+    height: 16px;
+}
+
+.course-includes {
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+.course-includes h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    /* text-base */
+    margin-bottom: 0.75rem;
+}
+
+.course-includes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-includes li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* spacing between icon and text */
+    margin-bottom: 0.75rem;
+    color: var(--dark-grey);
+    /* muted-foreground */
 }

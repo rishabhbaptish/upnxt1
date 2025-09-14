@@ -19,8 +19,7 @@ function addHeader() {
     const nav = document.createElement("nav");
     nav.className = "nav";
     nav.innerHTML = `<a href="/" class="active">Home</a>
-      <a href="#trending">Trending</a>
-      <a href="#courses">Community</a>`;
+      <a href="/courses">Courses</a>`
     header.append(logo);
     header.append(nav);
 }

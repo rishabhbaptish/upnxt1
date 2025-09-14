@@ -1,21 +1,19 @@
-async function addCarousel(){
-    const wrapper = document.createElement("div");
-    wrapper.className = "carousel";
-    wrapper.id = "carousel";
-    document.querySelector(".main").append(wrapper);
-    const courses = await fetchCourses();
-    renderCarousel(courses);
+async function addCarousel() {
+  const wrapper = document.createElement("div");
+  wrapper.className = "carousel";
+  wrapper.id = "carousel";
+  document.querySelector(".main").append(wrapper);
+  const carousel = await fetchCarousel();
+  renderCarousel(carousel);
 }
 
 let carouselIndex = 0;
 let autoTimer;
-let carouselItems = [];
 
-function renderCarousel(courses) {
+function renderCarousel(carouselItems) {
   const carousel = document.getElementById('carousel');
   if (!carousel) return;
 
-  carouselItems = courses.slice(0, 4);  // first 4 courses
   carousel.innerHTML = '';
 
   carouselItems.forEach((c, idx) => {
@@ -23,13 +21,16 @@ function renderCarousel(courses) {
     slide.className = 'slide';
     if (idx === carouselIndex) slide.classList.add('active'); // show first slide
     slide.innerHTML = `
-      <div class="meta">
-        <h1>${c.title}</h1>
-        <p>${c.short}</p>
-        <a class="cta" href="./course/?id=${c.id}">View Course</a>
-      </div>
-      <div class="thumb"><img src="${imgPath(c.image)}" alt="${c.title}"></div>
-    `;
+  <div class="thumb">
+    <img src="${imgPath(c.image)}" alt="img-${idx}"> 
+  </div>
+`;
+// slide.innerHTML = `
+//   <div class="thumb">
+//     <img src="${imgPath(c.image)}" alt="${c.title}">
+//     <div class="overlay-text">${c.title}</div>
+//   </div>
+// `;
     carousel.appendChild(slide);
   });
 

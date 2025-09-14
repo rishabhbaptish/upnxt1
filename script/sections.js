@@ -47,61 +47,105 @@ async function addAllCourses() {
 }
 
 function makeCard(c) {
-  const card = document.createElement('div');
-  card.className = 'card';
+    const card = document.createElement('div');
+    card.className = 'card';
 
-  // Create link wrapper for clickable parts
-  const link = document.createElement('a');
-  link.href = `./course/?id=${c.id}`;
-  link.className = 'card-link';
+    // Create link wrapper for clickable parts
+    const link = document.createElement('a');
+    link.href = `/course/?id=${c.id}`;
+    link.className = 'card-link';
 
-  // Banner
-  const banner = document.createElement("div");
-  banner.id = "banner";
-  const img = document.createElement("img");
-  img.src = imgPath(c.image);
-  img.alt = c.title;
-  banner.append(img);
+    // Banner
+    const banner = document.createElement("div");
+    banner.id = "banner";
+    const img = document.createElement("img");
+    img.src = imgPath(c.image);
+    img.alt = c.title;
+    banner.append(img);
 
-  // Content
-  const cardContentWrapper = document.createElement("div");
-  cardContentWrapper.id = "card-content-wrapper";
-  const cardContent = document.createElement("div");
-  cardContent.id = "card-content";
-  cardContent.innerHTML = `<h3>${c.title}</h3><p>${c.instructor}</p>`;
+    // Content
+    const cardContentWrapper = document.createElement("div");
+    cardContentWrapper.id = "card-content-wrapper";
+    const cardContent = document.createElement("div");
+    cardContent.id = "card-content";
+    cardContent.innerHTML = `<h3>${c.title}</h3>`;
 
-  const tagPrice = document.createElement("div");
-  tagPrice.id = "tag-price";
-  const badge = document.createElement("span");
-  badge.className = "badge";
-  badge.id = "badge";
-  badge.innerHTML = c.level;
-  tagPrice.append(badge);
+    // Main wrapper
+    const wrapper = document.createElement("div");
+    wrapper.className = "course-includes";
 
-  const price = document.createElement("span");
-  price.id = "price";
-  price.innerHTML = c.price;
-  tagPrice.append(price);
+    // Heading
+    const heading = document.createElement("h4");
+    heading.id = "card-inclusions";
+    heading.textContent = "This course includes:";
+    wrapper.appendChild(heading);
 
-  // Enroll button (separate action)
-  const enroll = document.createElement("button");
-  enroll.id = "enroll";
-  enroll.className = "button1";
-  enroll.textContent = "Enroll Now";
-  enroll.addEventListener("click", (e) => {
-    e.stopPropagation();
-    window.location.href = `./course/?id=${c.id}`;
-  });
+    // UL
+    const ul = document.createElement("ul");
 
-  // Assemble
-  cardContentWrapper.append(cardContent);
-  cardContentWrapper.append(tagPrice);
+    // Function to create a checkmark SVG
+    function createCheckIcon() {
+        const svgNS = "http://www.w3.org/2000/svg";
+        const svg = document.createElementNS(svgNS, "svg");
+        svg.setAttribute("xmlns", svgNS);
+        svg.setAttribute("viewBox", "0 0 24 24");
+        svg.setAttribute("fill", "none");
+        svg.setAttribute("stroke", "currentColor");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+        svg.setAttribute("stroke-linejoin", "round");
 
-  link.append(banner);
-  link.append(cardContentWrapper);
+        const path = document.createElementNS(svgNS, "path");
+        path.setAttribute("d", "M20 6 9 17l-5-5");
+        svg.appendChild(path);
 
-  card.append(link);     // clickable area
-  card.append(enroll);   // independent button
+        return svg;
+    }
 
-  return card;
+    // Add features
+    c.inclusions.forEach(feature => {
+        const li = document.createElement("li");
+        const icon = createCheckIcon();
+        li.appendChild(icon);
+        li.appendChild(document.createTextNode(feature));
+        ul.appendChild(li);
+    });
+
+    wrapper.appendChild(ul);
+
+    const tagPrice = document.createElement("div");
+    tagPrice.id = "tag-price";
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.id = "badge";
+    badge.innerHTML = c.level;
+    tagPrice.append(badge);
+
+    const price = document.createElement("div");
+    price.id = "price";
+    price.innerHTML = `<h3 class="price"><span class="original">${c.price[0]}</span>${c.price[1]}</h3>`;
+    tagPrice.append(price);
+
+    // Enroll button (separate action)
+    const enroll = document.createElement("button");
+    enroll.id = "enroll";
+    enroll.className = "button1";
+    enroll.textContent = "Enroll Now";
+    enroll.addEventListener("click", (e) => {
+        e.stopPropagation();
+        window.location.href = `/course/?id=${c.id}`;
+    });
+
+    // Assemble
+    cardContentWrapper.append(cardContent);
+    cardContent.append(wrapper);
+    cardContentWrapper.append(tagPrice);
+
+    link.append(banner);
+    link.append(cardContentWrapper);
+
+    card.append(link);     // clickable area
+    card.append(enroll);   // independent button
+
+    return card;
 }

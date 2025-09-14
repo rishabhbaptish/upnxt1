@@ -7,9 +7,9 @@
     align-items: center;
     gap: 1rem;
     padding: 12px 28px;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--header);
     backdrop-filter: saturate(120%) blur(4px);
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--grey);
 }
 
 .logo {
@@ -34,13 +34,13 @@
 
 .nav a {
     font-size: 14px;
-    color: #6b7280;
+    color: var(--dark-grey);
     text-decoration: none;
     padding: 6px 8px;
     border-radius: 6px;
 }
 
 .nav a.active {
-  color: #000;
+  color: var(--dark);
   font-weight: 500;
 }

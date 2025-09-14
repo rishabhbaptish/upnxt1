@@ -5,9 +5,15 @@
 
 :root {
     --bg: #ffffff;
-    --muted: #6b7280;
-    --card: #ffffff;
+    --dark: #333;
     --accent: #2563eb;
+    --hover-accent: oklch(0.488 0.243 264.376);
+    --light-grey:oklch(97% 0 0);
+    --grey: #ddd;
+    --dark-grey: #6b7280;
+    --header: rgba(255, 255, 255, 0.95);
+    --shadow: rgba(0, 0, 0, 0.1) 0 4px 6px;
+    --hover-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 * {
@@ -19,7 +25,7 @@
 
 body {
     background-color: var(--bg);
-    color: #111;
+    color: var(--dark);
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     display: flex;
@@ -36,7 +42,7 @@ body {
     /* align-items: center; */
 }
 
-.button1{
+.button1 {
     cursor: pointer;
     border: none;
     padding: 8px 10px;
@@ -48,6 +54,6 @@ body {
     border-radius: 12px;
 }
 
-.site-footer{
+.site-footer {
     margin-top: 2rem;
 }
