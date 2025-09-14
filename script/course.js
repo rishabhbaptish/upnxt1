@@ -1,4 +1,4 @@
-const COURSES_URL = '/courses.json';
+const COURSES_URL = '../courses.json';
 
 // fetch courses data
 async function fetchCourses() {
@@ -13,7 +13,7 @@ function imgPath(name) { return '../images/' + name; }
 
 document.addEventListener("DOMContentLoaded", function () {
     const main = document.querySelector(".main");
-    addHeader();
+    addHeader(1);
     (async () => {
         const bannerEl = await addBanner();
         const learnEl = await content();

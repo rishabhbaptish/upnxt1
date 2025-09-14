@@ -8,18 +8,25 @@
     </div>
 */
 
-function addHeader() {
-    const header = document.querySelector(".site-header");
-    const logo = document.createElement("div");
-    logo.addEventListener("click", () => {
-      window.location.href = '/';
-    })
-    logo.className = "logo";
-    logo.innerHTML = `<span class="text-black">upn<span class="text-blue">X</span>t</span>`;
-    const nav = document.createElement("nav");
-    nav.className = "nav";
-    nav.innerHTML = `<a href="/" class="active">Home</a>
-      <a href="/courses">Courses</a>`
-    header.append(logo);
-    header.append(nav);
+function addHeader(index = 0) {
+  const header = document.querySelector(".site-header");
+  const logo = document.createElement("div");
+  const add = index == 1 ? '../' : './';
+  logo.addEventListener("click", () => {
+    if (index == 1)
+      window.location.href = add;
+    else
+      window.location.href = add;
+  })
+  logo.className = "logo";
+  logo.innerHTML = `<span class="text-black">upn<span class="text-blue">X</span>t</span>`;
+  const nav = document.createElement("nav");
+  nav.className = "nav";
+  const currentPage = window.location.pathname; // e.g., "/courses" or "/"
+  nav.innerHTML = `
+  <a href="${add}" class="${currentPage === '/' ? 'active' : ''}">Home</a>
+  <a href="${add}courses" class="${currentPage === '/courses/' ? 'active' : ''}">Courses</a>
+`;
+  header.append(logo);
+  header.append(nav);
 }

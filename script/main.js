@@ -1,5 +1,5 @@
-const COURSES_URL = '/courses.json';
-const CAROUSEL_url = '/carousel.json';
+const COURSES_URL = './courses.json';
+const CAROUSEL_url = './carousel.json';
 // fetch courses data
 async function fetchCourses(){
   const res = await fetch(COURSES_URL);
