@@ -7,15 +7,38 @@
         <link rel="stylesheet" href="../css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
             rel="stylesheet">
     </head>
     <body>
+
+        <!-- Firebase CDN Scripts -->
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
         <header class="site-header"></header>
         <main class="main" id="main"></main>
         <footer class="site-footer"> © 2025 <strong>upnXt</strong> | All Rights
             Reserved </footer>
+        
+        <!-- Firebase Configuration -->
+        <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDC9cMWnNApFBgcKLAB_YQOZ6IToT4kocI",
+            authDomain: "upnxt-5f86c.firebaseapp.com",
+            projectId: "upnxt-5f86c",
+            storageBucket: "upnxt-5f86c.firebasestorage.app",
+            messagingSenderId: "305418350732",
+            appId: "1:305418350732:web:ca72f514fc1246a121cba9",
+            measurementId: "G-86WEBM132Z"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        </script>
+        
+        <script src="../script/firebase-auth.js"></script>
 
         <script src="../script/header.js"></script>
         <script src="../script/carousel.js"></script>
