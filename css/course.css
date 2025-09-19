@@ -123,7 +123,7 @@ div.c {
     position: relative;
 }
 
-.course-field input {
+.course-field {
     position: absolute;
     left: 0;
     top: 0;
