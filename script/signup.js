@@ -1,3 +1,5 @@
+// signup.js
+
 // Fetch user from Firebase or fallback to user.json
 async function fetchUser() {
   try {
@@ -11,91 +13,6 @@ async function fetchUser() {
     console.warn("Could not fetch user data:", e.message);
     return null;
   }
-}
-
-async function addHeader(index = 0) {
-  const header = document.querySelector(".site-header");
-  if (!header) return;
-
-  // Avoid re-initializing
-  if (header.hasAttribute("data-header-initialized")) return;
-
-  const add = index === 1 ? "../" : "./";
-
-  let user = null;
-  try {
-    user = await fetchUser();
-  } catch (e) {
-    user = null;
-  }
-
-  // Logo
-  const logo = document.createElement("div");
-  logo.addEventListener("click", () => (window.location.href = add));
-  logo.className = "logo";
-  logo.innerHTML = `<span class="text-black">upn<span class="text-blue">X</span>t</span>`;
-
-  // Nav
-  const nav = document.createElement("nav");
-  nav.className = "nav";
-  const currentPage = window.location.pathname;
-  nav.innerHTML = `
-    <a href="${add}" class="${currentPage.endsWith("/") || currentPage.endsWith("/index.html") ? "active" : ""}">Home</a>
-    <a href="${add}courses" class="${currentPage.includes("/courses") ? "active" : ""}">Courses</a>
-  `;
-
-  // Auth Section
-  const authSection = document.createElement("div");
-  authSection.className = "auth-section";
-
-  if (!user || !user.email) {
-    authSection.innerHTML = `
-      <div class="avatar-wrapper">
-        <div class="avatar">
-          <i class="fa fa-user"></i>
-        </div>
-        <div class="dropdown-menu hidden">
-          <button class="dropdown-btn" onclick="window.location.href='${add}auth/login.html'">
-            Login / Signup
-          </button>
-        </div>
-      </div>
-    `;
-    authSection.querySelector(".avatar").addEventListener("click", () => {
-      authSection.querySelector(".dropdown-menu").classList.toggle("hidden");
-    });
-  } else {
-    const initials = user.username
-      ? user.username[0].toUpperCase()
-      : user.email[0].toUpperCase();
-
-    authSection.innerHTML = `
-      <div class="avatar-wrapper">
-        <div class="avatar">${initials}</div>
-        <div class="dropdown-menu hidden">
-          <span class="menu-text">Welcome, ${user.username || user.email}</span>
-          <button class="dropdown-btn logout-btn" onclick="logout()">Logout</button>
-        </div>
-      </div>
-    `;
-    authSection.querySelector(".avatar").addEventListener("click", () => {
-      authSection.querySelector(".dropdown-menu").classList.toggle("hidden");
-    });
-  }
-
-  header.append(logo);
-  header.append(nav);
-  header.append(authSection);
-  header.setAttribute("data-header-initialized", "true");
-
-  // Close dropdowns if clicked outside
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".avatar-wrapper")) {
-      document
-        .querySelectorAll(".dropdown-menu")
-        .forEach((menu) => menu.classList.add("hidden"));
-    }
-  });
 }
 
 // Firebase logout
@@ -117,25 +34,22 @@ function createSignupForm() {
   authContainer.innerHTML = `
     <div class="auth-card">
       <div class="auth-header">
-        <div class="auth-logo">
-          <span class="text-black">upn<span class="text-blue">X</span>t</span>
-        </div>
         <h1 class="auth-title">Create Account</h1>
         <p class="auth-subtitle">Join upnXt to start your learning journey</p>
       </div>
 
       <form class="auth-form" id="signupForm">
-        <div class="form-group">
-          <label for="username" class="form-label">Username</label>
-          <input type="text" id="username" class="form-input" placeholder="Choose a username" required>
-          <div class="error-message" id="usernameError">Username must be at least 3 characters</div>
-        </div>
-
-        <div class="form-group">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
-          <div class="error-message" id="emailError">Please enter a valid email address</div>
-        </div>
+      
+      <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+      <div class="error-message" id="emailError">Please enter a valid email address</div>
+      </div>
+      <div class="form-group">
+        <label for="username" class="form-label">Name</label>
+        <input type="text" id="username" class="form-input" placeholder="Your Name" required>
+        <div class="error-message" id="usernameError">Username must be at least 3 characters</div>
+      </div>
 
         <div class="form-group">
           <label for="password" class="form-label">Password</label>
@@ -303,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    // Use the header.js addHeader function
     addHeader(1);
 
     const main = document.querySelector(".main");

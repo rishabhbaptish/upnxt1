@@ -22,20 +22,14 @@
         <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
         
         <!-- Firebase Configuration -->
+         <script src="../config.js"></script>
         <script>
-            // Replace these values with your actual Firebase config
-            const firebaseConfig = {
-                apiKey: "AIzaSyDC9cMWnNApFBgcKLAB_YQOZ6IToT4kocI",
-                authDomain: "upnxt-5f86c.firebaseapp.com",
-                projectId: "upnxt-5f86c",
-                storageBucket: "upnxt-5f86c.firebasestorage.app",
-                messagingSenderId: "305418350732",
-                appId: "1:305418350732:web:ca72f514fc1246a121cba9",
-                measurementId: "G-86WEBM132Z"
-            };
-            
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
+            if(typeof firebaseConfig !== undefined){
+                firebase.initializeApp(firebaseConfig);
+            }
+            else {
+                console.log("Firebase config not found. Please make sure config.js exists");
+            }
         </script>
         
         <!-- Your JavaScript files -->

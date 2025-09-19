@@ -1,3 +1,5 @@
+// login.js
+
 // Fetch user from localStorage (Firebase) or fallback to user.json
 async function fetchUser() {
   try {
@@ -15,105 +17,6 @@ async function fetchUser() {
     console.warn("Could not fetch user data:", e.message);
     return null;
   }
-}
-
-async function addHeader(index = 0) {
-  const header = document.querySelector(".site-header");
-  if (!header) return;
-  
-  // Check if header is already initialized
-  if (header.hasAttribute('data-header-initialized')) {
-    return;
-  }
-  
-  // Check if auth section already exists
-  let authSection = header.querySelector('.auth-section');
-  if (authSection) {
-    return;
-  }
-  
-  const add = index == 1 ? "../" : "./";
-  
-  let user = null;
-  try {
-    user = await fetchUser();
-  } catch (e) {
-    user = null;
-  }
-  
-  // Create logo
-  const logo = document.createElement("div");
-  logo.addEventListener("click", () => {
-    window.location.href = add;
-  });
-  logo.className = "logo";
-  logo.innerHTML = `<span class="text-black">upn<span class="text-blue">X</span>t</span>`;
-
-  // Create navigation
-  const nav = document.createElement("nav");
-  nav.className = "nav";
-  const currentPage = window.location.pathname;
-  nav.innerHTML = `
-    <a href="${add}" class="${currentPage.endsWith('/') || currentPage.endsWith('/index.html') ? 'active' : ''}">Home</a>
-    <a href="${add}courses" class="${currentPage.includes('/courses') ? 'active' : ''}">Courses</a>
-  `;
-
-  // Create auth section
-  authSection = document.createElement("div");
-  authSection.className = "auth-section";
-  
-  if (!user || !user.email) {
-    authSection.innerHTML = `
-      <div class="avatar-wrapper">
-        <div class="avatar">
-          <i class="fa fa-user"></i>
-        </div>
-        <div class="dropdown-menu hidden">
-          <button class="dropdown-btn" onclick="window.location.href='${add}auth/login.html'">
-            Login / Signup
-          </button>
-        </div>
-      </div>
-    `;
-    
-    authSection.querySelector(".avatar").addEventListener("click", () => {
-      const menu = authSection.querySelector(".dropdown-menu");
-      menu.classList.toggle("hidden");
-    });
-  } else {
-    const initials = user.username
-      ? user.username[0].toUpperCase()
-      : user.email[0].toUpperCase();
-    
-    authSection.innerHTML = `
-      <div class="avatar-wrapper">
-        <div class="avatar">${initials}</div>
-        <div class="dropdown-menu hidden">
-          <span class="menu-text">Welcome, ${user.username || user.email}</span>
-          <button class="dropdown-btn logout-btn" onclick="logout()">Logout</button>
-        </div>
-      </div>
-    `;
-    
-    authSection.querySelector(".avatar").addEventListener("click", () => {
-      const menu = authSection.querySelector(".dropdown-menu");
-      menu.classList.toggle("hidden");
-    });
-  }
-  
-  // Append all elements to header
-  header.append(logo);
-  header.append(nav);
-  header.append(authSection);
-  header.setAttribute('data-header-initialized', 'true');
-  
-  // Close dropdown when clicking outside
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".avatar-wrapper")) {
-      const dropdowns = document.querySelectorAll(".dropdown-menu");
-      dropdowns.forEach(dropdown => dropdown.classList.add("hidden"));
-    }
-  });
 }
 
 // Logout function using Firebase
@@ -135,9 +38,6 @@ function createLoginForm() {
     authContainer.innerHTML = `
         <div class="auth-card">
             <div class="auth-header">
-                <div class="auth-logo">
-                    <span class="text-black">upn<span class="text-blue">X</span>t</span>
-                </div>
                 <h1 class="auth-title">Welcome back</h1>
                 <p class="auth-subtitle">Sign in to continue your learning journey</p>
             </div>
@@ -156,10 +56,6 @@ function createLoginForm() {
                 </div>
                 
                 <div class="form-options">
-                    <label class="remember-me">
-                        <input type="checkbox" id="rememberMe">
-                        <span>Remember me</span>
-                    </label>
                     <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
                 
@@ -355,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         
+        // Use the header.js addHeader function
         addHeader(1);
         
         const main = document.querySelector(".main");
@@ -373,4 +270,4 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
         console.error('Error initializing login page:', error);
     }
-});
+}); 

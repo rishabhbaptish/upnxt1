@@ -29,47 +29,35 @@ async function addHeader(index = 0) {
   authSection.className = "auth-section";
 
   if (!user || !user.email) {
-    // Not logged in → show Login/Signup button
+    // Not logged in → show Login/Signup button to the right of avatar
     authSection.innerHTML = `
       <div class="avatar-wrapper">
         <div class="avatar">
-          <i class="fa fa-user"></i>
-        </div>
-        <div class="dropdown-menu hidden">
-          <button class="dropdown-btn" onclick="window.location.href='${add}auth/login.html'">
-            Login / Signup
+          <i class="fa-regular fa-user"></i>
+          </div>
+          <button class="login-btn" onclick="window.location.href='${add}auth/login.html'">
+          Login
           </button>
+          </div>
+          `;
+          
+        } else {
+          // Logged in → show first letter of username/email
+          const initials = user.username
+          ? user.username[0].toUpperCase()
+          : user.email[0].toUpperCase();
+          
+          authSection.innerHTML = `
+        <div class="avatar-wrapper">
+        <div class="avatar">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="user-menu">
+          <span class="welcome-text">${user.username || user.email}</span>
+          <button class="logout-btn">Logout</button>
         </div>
       </div>
     `;
-
-    // Toggle dropdown
-    authSection.querySelector(".avatar").addEventListener("click", () => {
-      const menu = authSection.querySelector(".dropdown-menu");
-      menu.classList.toggle("hidden");
-    });
-
-  } else {
-    // Logged in → show first letter of username/email
-    const initials = user.username
-      ? user.username[0].toUpperCase()
-      : user.email[0].toUpperCase();
-
-    authSection.innerHTML = `
-      <div class="avatar-wrapper">
-        <div class="avatar">${initials}</div>
-        <div class="dropdown-menu hidden">
-          <span class="menu-text">Welcome, ${user.username || user.email}</span>
-          <button class="dropdown-btn logout-btn">Logout</button>
-        </div>
-      </div>
-    `;
-
-    // Toggle dropdown
-    authSection.querySelector(".avatar").addEventListener("click", () => {
-      const menu = authSection.querySelector(".dropdown-menu");
-      menu.classList.toggle("hidden");
-    });
 
     // Logout button
     authSection.querySelector(".logout-btn").addEventListener("click", async () => {
