@@ -125,7 +125,7 @@ div.c {
     position: relative;
 }
 
-input {
+.course-field {
     position: absolute;
     left: 0;
     top: 0;
