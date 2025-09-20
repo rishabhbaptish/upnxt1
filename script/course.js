@@ -231,7 +231,7 @@ function makePromoCard(c) {
     enroll.textContent = "Enroll Now";
     enroll.addEventListener("click", (e) => {
         e.stopPropagation();
-        window.location.href = `./course/?id=${c.id}`;
+        openCourseModal(c);
     });
 
     // Assemble
@@ -339,3 +339,115 @@ function toYouTubeEmbed(url) {
     }
     return url;
 }
+
+// modal.js
+
+// Function to create and show modal
+function openCourseModal(course) {
+    // Remove existing modal if present
+    const existingModal = document.getElementById("course-modal");
+    if (existingModal) existingModal.remove();
+
+    // Create modal container
+    const modal = document.createElement("div");
+    modal.id = "course-modal";
+    modal.className = "modal-overlay";
+
+    modal.innerHTML = `
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <h2>Checkout</h2>
+      <h3>${course.title}</h3>
+      <div id="card-content-wrapper"></div>
+      <div class="modal-footer"><h3 class="price"></h3><form id="payment-form"></form></div>
+      </div>
+  `;
+
+    // Content
+    const cardContentWrapper = modal.querySelector("#card-content-wrapper");
+    const cardContent = document.createElement("div");
+    cardContent.id = "card-content";
+    cardContent.style.padding = "0";
+
+    // Main wrapper
+    const wrapper = document.createElement("div");
+    wrapper.className = "course-includes";
+    wrapper.style.fontSize = "0.75rem";
+
+    // Heading
+    const heading = document.createElement("h4");
+    heading.textContent = "This course includes:";
+    wrapper.appendChild(heading);
+
+    const ul = document.createElement("ul");
+
+    // Function to create a checkmark SVG
+    function createCheckIcon() {
+        const svgNS = "http://www.w3.org/2000/svg";
+        const svg = document.createElementNS(svgNS, "svg");
+        svg.setAttribute("xmlns", svgNS);
+        svg.setAttribute("viewBox", "0 0 24 24");
+        svg.setAttribute("fill", "none");
+        svg.setAttribute("stroke", "currentColor");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+        svg.setAttribute("stroke-linejoin", "round");
+
+        const path = document.createElementNS(svgNS, "path");
+        path.setAttribute("d", "M20 6 9 17l-5-5");
+        svg.appendChild(path);
+
+        return svg;
+    }
+
+    // Add features
+    course.inclusions.forEach(feature => {
+        const li = document.createElement("li");
+        const icon = createCheckIcon();
+        li.appendChild(icon);
+        li.appendChild(document.createTextNode(feature));
+        li.style.marginBottom = '0';
+        ul.appendChild(li);
+    });
+
+    wrapper.appendChild(ul);
+
+    // Inject into DOM
+    cardContent.append(wrapper);
+ 
+    const priceTag = modal.querySelector(".price");
+    priceTag.style.padding = '0';
+    priceTag.style.fontSize = '1.25rem';
+    priceTag.style.width = "fit-content";
+    priceTag.textContent = "Price: ";
+    // Original price
+    const originalPrice = document.createElement("span");
+    originalPrice.className = "original";
+    originalPrice.style.marginLeft = '0';
+    originalPrice.textContent = course.price[0];
+
+    const discounted = document.createTextNode(" " + course.price[1]);
+    
+    priceTag.append(originalPrice, " ", discounted);
+    cardContentWrapper.append(cardContent);
+    // cardContentWrapper.append(priceTag);
+
+    document.body.appendChild(modal);
+
+    // Close button functionality
+    document.getElementById("modal-close").onclick = () => modal.remove();
+
+    // Outside click closes modal
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+
+    // Proceed to payment button
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+    script.setAttribute("data-payment_button_id", "pl_RJttEd9SseTycf"); // replace with your ID
+    script.async = true;
+    document.getElementById("payment-form").appendChild(script);
+
+}
+
