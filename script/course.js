@@ -442,12 +442,41 @@ function openCourseModal(course) {
         if (e.target === modal) modal.remove();
     };
 
-    // Proceed to payment button
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-    script.setAttribute("data-payment_button_id", "pl_RJttEd9SseTycf"); // replace with your ID
-    script.async = true;
-    document.getElementById("payment-form").appendChild(script);
+    (async () => {
+        const user = firebase.auth().currentUser;
+
+        if (!user) {
+        window.location.href = "../auth/login.html"; // replace with your sign-in page URL
+        return;
+    }
+        const idToken = await user.getIdToken();
+
+        const paymentForm = document.getElementById("payment-form");
+
+        // Create a dynamic form for Razorpay button with success URL
+        const form = document.createElement("form");
+        form.method = "GET";
+        form.action = `https://<REGION>-<PROJECT>.cloudfunctions.net/verifyPayment?courseId=${course.id}&idToken=${idToken}`;
+
+        const script = document.createElement("script");
+        script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+        script.setAttribute("data-payment_button_id", course.paymentButton);
+        script.async = true;
+
+        form.appendChild(script);
+        paymentForm.appendChild(form);
+    })();
+
+
+
+
+    // // Proceed to payment button
+    // const script = document.createElement("script");
+    // script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+
+    // script.setAttribute("data-payment_button_id", course.paymentButton); // replace with your ID
+    // script.async = true;
+    // document.getElementById("payment-form").appendChild(script);
 
 }
 

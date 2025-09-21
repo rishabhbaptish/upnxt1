@@ -95,7 +95,6 @@ Avatar Circle
 
 .avatar:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .avatar i {
@@ -130,6 +129,7 @@ Avatar Circle
   font-size: 14px;
   color: var(--dark-grey, #6b7280);
   font-weight: 500;
+  cursor: default;
 }
 
 /* Logout button */
