@@ -2,7 +2,7 @@ function addSections() {
     const main = document.createElement("div");
     main.id = "section-wrapper";
     document.querySelector("#main").append(main);
-    addTrending();
+    // addTrending();
     addAllCourses();
 }
 

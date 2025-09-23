@@ -18,8 +18,11 @@ async function addHeader(index = 0) {
   const currentPage = window.location.pathname;
   nav.innerHTML = `
     <a href="${add}" class="${currentPage === '/' ? 'active' : ''}">Home</a>
-    <a href="${add}courses" class="${currentPage === '/courses/' ? 'active' : ''}">Courses</a>
   `;
+  // nav.innerHTML = `
+  //   <a href="${add}" class="${currentPage === '/' ? 'active' : ''}">Home</a>
+  //   <a href="${add}courses" class="${currentPage === '/courses/' ? 'active' : ''}">Courses</a>
+  // `;
 
   // ✅ Get user from Firebase wrapper
   const user = firebaseAuth.getCurrentUser();
@@ -49,7 +52,7 @@ async function addHeader(index = 0) {
           
           authSection.innerHTML = `
         <div class="avatar-wrapper">
-        <div class="avatar">
+        <div class="avatar" onclick="toggleMenu()">
           <i class="fa-regular fa-user"></i>
         </div>
         <div class="user-menu">
@@ -70,4 +73,9 @@ async function addHeader(index = 0) {
   header.append(logo);
   header.append(nav);
   header.append(authSection);
+}
+
+function toggleMenu() {
+  const menu = document.querySelector(".user-menu");
+  menu.classList.toggle("active");
 }

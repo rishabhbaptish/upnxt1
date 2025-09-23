@@ -1,12 +1,13 @@
 [
   {
-    "id": "01",
-    "title": "Complete React Development",
+    "id": "C0001",
+    "title": "Data Science",
     "description": "A practical course covering React fundamentals to advanced patterns, with projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "level": "Beginner",
+    "level": "Telugu",
+    "paymentButton":"pl_RJttEd9SseTycf",
     "price": [
-      "₹9999",
-      "₹4999"
+      "₹6999",
+      "₹2999"
     ],
     "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
     "image": "react.jpg",
@@ -26,44 +27,44 @@
     ],
     "curriculum": [
       {
-        "title": "Week 1 - Python Foundations for Data Science",
-        "duration": "8 lectures",
-        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage"
+        "title": "Module 1 - Python Foundations for Data Science",
+        "duration": "6 lectures",
+        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage<br>• Mini Exercises: loops, conditions, functions, file operations<br>• Hands-On Practice (Solve Python coding exercises)"
       },
       {
-        "title": "Week 2 - Data Analysis & Visualization (Pandas + EDA)",
+        "title": "Module 2 - Data Analysis & Visualization (Pandas + EDA)",
         "duration": "10 lectures",
-        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn"
+        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn<br>• Hands-On Practice (Analyze real-world datasets, Generate insights and visualizations, Python Project: Automate Data Cleaning & Preprocessing)"
       },
       {
-        "title": "Week 3 - Statistics for Data Science",
+        "title": "Module 3 - Statistics for Data Science",
         "duration": "8 lectures",
-        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis"
+        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis<br>• Mini Exercises: Applying statistics to solve problems<br>• Hands-On Practice (Apply statistical concepts on datasets)"
       },
       {
-        "title": "Week 4 - SQL for Data Science",
+        "title": "Module 4 - SQL for Data Science",
         "duration": "8 lectures",
-        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights"
+        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights<br>• Hands-On Practice (Query datasets to extract insights,Perform joins, aggregations, and subqueries)"
       },
       {
-        "title": "Week 5 - Machine Learning Foundations",
+        "title": "Module 5 - Machine Learning Foundations",
         "duration": "10 lectures",
-        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<"
+        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<br>• Hands-On Practice (Build and evaluate regression & classification models, Explore clustering)<br>• Case Study: Customer dataset analysis"
       },
       {
-        "title": "Week 6 - Feature Engineering & AI / Deep Learning Essentials",
+        "title": "Module 6 - Feature Engineering & AI / Deep Learning Essentials",
         "duration": "12 lectures",
-        "content": "• Feature Engineering (Hands-On):<br>• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
+        "content": "• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
       },
       {
-        "title": "Week 7 - Data Storytelling & Power BI",
+        "title": "Module 7 - Data Storytelling & Power BI",
         "duration": "8 lectures",
-        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation"
+        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation<br>• Hands-On Practice (Build interactive dashboards, Prepare story-driven visualizations for portfolio)"
       },
       {
-        "title": "Week 8 - Capstone Projects",
+        "title": "Module 8 - Capstone Projects",
         "duration": "5 - 6 projects",
-        "content": "Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard"
+        "content": "• Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard<br>•  Hands-On Practice (Implement full workflow from dataset to insights, Showcase projects in portfolio-ready format)"
       }
     ],
     "inclusions": [
@@ -83,196 +84,21 @@
     ]
   },
   {
-    "id": "02",
-    "title": "Python for Data Essentials",
-    "description": "Hands-on Python for data tasks: cleaning, visualization and small projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "level": "Beginner",
-    "duration": "18 hours",
-    "price": [
-      "₹9999",
-      "₹4999"
-    ],
-    "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
-    "image": "python.jpg",
-    "tags": [
-      "Python",
-      "Data",
-      "Pandas"
-    ],
-    "outcomes": [
-      "Master Python programming from a data science perspective",
-      "Perform powerful data analysis using Pandas and NumPy",
-      "Create stunning data visualizations with Matplotlib and Seaborn",
-      "Understand and apply core statistics and probability concepts",
-      "Clean and preprocess real-world datasets for accurate insights",
-      "Work on real-life projects",
-      "Use Jupyter Notebooks for data-driven development"
-    ],
-    "curriculum": [
-      {
-        "title": "Week 1 - Python Foundations for Data Science",
-        "duration": "8 lectures",
-        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage"
-      },
-      {
-        "title": "Week 2 - Data Analysis & Visualization (Pandas + EDA)",
-        "duration": "10 lectures",
-        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn"
-      },
-      {
-        "title": "Week 3 - Statistics for Data Science",
-        "duration": "8 lectures",
-        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis"
-      },
-      {
-        "title": "Week 4 - SQL for Data Science",
-        "duration": "8 lectures",
-        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights"
-      },
-      {
-        "title": "Week 5 - Machine Learning Foundations",
-        "duration": "10 lectures",
-        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<"
-      },
-      {
-        "title": "Week 6 - Feature Engineering & AI / Deep Learning Essentials",
-        "duration": "12 lectures",
-        "content": "• Feature Engineering (Hands-On):<br>• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
-      },
-      {
-        "title": "Week 7 - Data Storytelling & Power BI",
-        "duration": "8 lectures",
-        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation"
-      },
-      {
-        "title": "Week 8 - Capstone Projects",
-        "duration": "5 - 6 projects",
-        "content": "Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard"
-      }
-    ],
-    "inclusions": [
-      "Live Classes",
-      "Duration - 2 months",
-      "Hands on Project",
-      "Exclusive Community",
-      "Certificate of completion"
-    ],
-    "requirements": [
-      "No prior experience in data science is needed",
-      "Basic computer skills and internet access",
-      "Willingness to learn and solve real-world problems",
-      "Curiosity and consistency — that's all you really need!",
-      "Stable internet connection for accessing course content",
-      "Basic familiarity with using the terminal/command line (helpful but not required)"
-    ]
-  },
-  {
-    "id": "03",
-    "title": "AI / Machine Learning Foundations",
-    "short": "Intro to ML concepts, models and workflows.",
-    "description": "Understand supervised learning, feature engineering and model evaluation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "instructor": "Dr. Meera Singh",
-    "language": "Hindi",
-    "level": "Intermediate",
-    "duration": "30 hours",
-    "price": [
-      "₹9999",
-      "₹4999"
-    ],
-    "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
-    "image": "ml.jpg",
-    "tags": [
-      "Hot & New",
-      "ML",
-      "AI"
-    ],
-    "outcomes": [
-      "Master Python programming from a data science perspective",
-      "Perform powerful data analysis using Pandas and NumPy",
-      "Create stunning data visualizations with Matplotlib and Seaborn",
-      "Understand and apply core statistics and probability concepts",
-      "Clean and preprocess real-world datasets for accurate insights",
-      "Work on real-life projects",
-      "Use Jupyter Notebooks for data-driven development"
-    ],
-    "curriculum": [
-      {
-        "title": "Week 1 - Python Foundations for Data Science",
-        "duration": "8 lectures",
-        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage"
-      },
-      {
-        "title": "Week 2 - Data Analysis & Visualization (Pandas + EDA)",
-        "duration": "10 lectures",
-        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn"
-      },
-      {
-        "title": "Week 3 - Statistics for Data Science",
-        "duration": "8 lectures",
-        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis"
-      },
-      {
-        "title": "Week 4 - SQL for Data Science",
-        "duration": "8 lectures",
-        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights"
-      },
-      {
-        "title": "Week 5 - Machine Learning Foundations",
-        "duration": "10 lectures",
-        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<"
-      },
-      {
-        "title": "Week 6 - Feature Engineering & AI / Deep Learning Essentials",
-        "duration": "12 lectures",
-        "content": "• Feature Engineering (Hands-On):<br>• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
-      },
-      {
-        "title": "Week 7 - Data Storytelling & Power BI",
-        "duration": "8 lectures",
-        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation"
-      },
-      {
-        "title": "Week 8 - Capstone Projects",
-        "duration": "5 - 6 projects",
-        "content": "Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard"
-      }
-    ],
-    "inclusions": [
-      "Live Classes",
-      "Duration - 2 months",
-      "Hands on Project",
-      "Exclusive Community",
-      "Certificate of completion"
-    ],
-    "requirements": [
-      "No prior experience in data science is needed",
-      "Basic computer skills and internet access",
-      "Willingness to learn and solve real-world problems",
-      "Curiosity and consistency — that's all you really need!",
-      "Stable internet connection for accessing course content",
-      "Basic familiarity with using the terminal/command line (helpful but not required)"
-    ]
-  },
-  {
-    "id": "04",
+    "id": "C0002",
+    "title": "Data Analytics",
+    "description": "A practical course covering React fundamentals to advanced patterns, with projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "level": "Telugu",
     "paymentButton":"pl_RJttEd9SseTycf",
-    "title": "Data Science Practical",
-    "short": "Data pipelines, analysis and storytelling with data.",
-    "description": "From raw data to insight \u2014 practical workflows and case studies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "instructor": "Rohan Patel",
-    "language": "English",
-    "level": "Intermediate",
-    "duration": "36 hours",
     "price": [
-      "₹9999",
-      "₹4999"
+      "₹6999",
+      "₹2999"
     ],
     "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
-    "image": "datasci.jpg",
+    "image": "react.jpg",
     "tags": [
-      "Data Science",
-      "ETL",
-      "Analysis"
+      "React",
+      "Javascript",
+      "Web"
     ],
     "outcomes": [
       "Master Python programming from a data science perspective",
@@ -285,219 +111,44 @@
     ],
     "curriculum": [
       {
-        "title": "Week 1 - Python Foundations for Data Science",
-        "duration": "8 lectures",
-        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage"
+        "title": "Module 1 - Python Foundations for Data Analytics",
+        "duration": "6 lectures",
+        "content": "• Python for Data Analytics: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage<br>• Mini Exercises: loops, conditions, functions, file operations<br>• Hands-On Practice (Solve Python coding exercises)"
       },
       {
-        "title": "Week 2 - Data Analysis & Visualization (Pandas + EDA)",
+        "title": "Module 2 - Data Analysis & Visualization (Pandas + EDA)",
         "duration": "10 lectures",
-        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn"
+        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn<br>• Hands-On Practice (Analyze real-world datasets - Generate insights and visualizations, Project: EDA project)"
       },
       {
-        "title": "Week 3 - Statistics for Data Science",
+        "title": "Module 3 - Statistics for Data Analytics",
         "duration": "8 lectures",
-        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis"
+        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis<br>• Hands-On Practice (Apply statistical concepts on datasets, Perform hypothesis testing and interpret results)"
       },
       {
-        "title": "Week 4 - SQL for Data Science",
+        "title": "Module 4 - SQL for Data Analytics",
         "duration": "8 lectures",
-        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights"
+        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights<br>• Hands-On Practice (Query datasets to extract insights, Perform joins, aggregations, and subqueries)"
       },
       {
-        "title": "Week 5 - Machine Learning Foundations",
+        "title": "Module 5 - Machine Learning Basics for Analytics",
         "duration": "10 lectures",
-        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<"
+        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<br>• Hands-On Practice (Build and evaluate regression & classification models, Explore clustering)<br>• Case Study: Customer dataset analysis"
       },
       {
-        "title": "Week 6 - Feature Engineering & AI / Deep Learning Essentials",
+        "title": "Module 6 - R Programming & Analytics",
         "duration": "12 lectures",
-        "content": "• Feature Engineering (Hands-On):<br>• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
+        "content": "• R Setup & Basics: Install R & RStudio, R Console, R Markdown<br>• Core Syntax: variables, vectors, lists, matrices, data frames, factors<br>• Functions, control structures, and package management<br>• Data Analysis & EDA in R<br>• Data Visualization: interactive visuals with Plotly, ggplot2<br>• Machine Learning with R: linear/logistic regression, decision trees, random forest, model evaluation (train/test split, confusion matrix, RMSE)<br>• Hands-On Practice (Create interactive Plotly and ggplot2 charts, Train and evaluate at least one regression and one classification model in R)"
       },
       {
-        "title": "Week 7 - Data Storytelling & Power BI",
+        "title": "Module 7 - Data Storytelling & Power BI",
         "duration": "8 lectures",
-        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation"
+        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation<br>• Hands-On Practice (Build interactive dashboards, Prepare story-driven visualizations for portfolio)"
       },
       {
-        "title": "Week 8 - Capstone Projects",
-        "duration": "5 - 6 projects",
-        "content": "Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard"
-      }
-    ],
-    "inclusions": [
-      "Live Classes",
-      "Duration - 2 months",
-      "Hands on Project",
-      "Exclusive Community",
-      "Certificate of completion"
-    ],
-    "requirements": [
-      "No prior experience in data science is needed",
-      "Basic computer skills and internet access",
-      "Willingness to learn and solve real-world problems",
-      "Curiosity and consistency — that's all you really need!",
-      "Stable internet connection for accessing course content",
-      "Basic familiarity with using the terminal/command line (helpful but not required)"
-    ]
-  },
-  {
-    "id": "05",
-    "title": "Fullstack Web Development",
-    "short": "Frontend + backend fundamentals to build full web apps.",
-    "description": "Learn HTML, CSS, JS, and backend basics to launch apps end-to-end. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "instructor": "Nisha Kapoor",
-    "language": "Telugu",
-    "level": "All levels",
-    "duration": "40 hours",
-    "price": [
-      "₹9999",
-      "₹4999"
-    ],
-    "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
-    "image": "webdev.jpg",
-    "tags": [
-      "Web",
-      "Fullstack",
-      "Javascript"
-    ],
-    "outcomes": [
-      "Master Python programming from a data science perspective",
-      "Perform powerful data analysis using Pandas and NumPy",
-      "Create stunning data visualizations with Matplotlib and Seaborn",
-      "Understand and apply core statistics and probability concepts",
-      "Clean and preprocess real-world datasets for accurate insights",
-      "Work on real-life projects",
-      "Use Jupyter Notebooks for data-driven development"
-    ],
-    "curriculum": [
-      {
-        "title": "Week 1 - Python Foundations for Data Science",
-        "duration": "8 lectures",
-        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage"
-      },
-      {
-        "title": "Week 2 - Data Analysis & Visualization (Pandas + EDA)",
-        "duration": "10 lectures",
-        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn"
-      },
-      {
-        "title": "Week 3 - Statistics for Data Science",
-        "duration": "8 lectures",
-        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis"
-      },
-      {
-        "title": "Week 4 - SQL for Data Science",
-        "duration": "8 lectures",
-        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights"
-      },
-      {
-        "title": "Week 5 - Machine Learning Foundations",
-        "duration": "10 lectures",
-        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<"
-      },
-      {
-        "title": "Week 6 - Feature Engineering & AI / Deep Learning Essentials",
-        "duration": "12 lectures",
-        "content": "• Feature Engineering (Hands-On):<br>• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
-      },
-      {
-        "title": "Week 7 - Data Storytelling & Power BI",
-        "duration": "8 lectures",
-        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation"
-      },
-      {
-        "title": "Week 8 - Capstone Projects",
-        "duration": "5 - 6 projects",
-        "content": "Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard"
-      }
-    ],
-    "inclusions": [
-      "Live Classes",
-      "Duration - 2 months",
-      "Hands on Project",
-      "Exclusive Community",
-      "Certificate of completion"
-    ],
-    "requirements": [
-      "No prior experience in data science is needed",
-      "Basic computer skills and internet access",
-      "Willingness to learn and solve real-world problems",
-      "Curiosity and consistency — that's all you really need!",
-      "Stable internet connection for accessing course content",
-      "Basic familiarity with using the terminal/command line (helpful but not required)"
-    ]
-  },
-  {
-    "id": "06",
-    "title": "UI / UX Design Fundamentals",
-    "short": "Design interfaces that are usable and beautiful.",
-    "description": "Principles of UI/UX and practical prototyping workflows. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "instructor": "Sara Lee",
-    "language": "Telugu",
-    "level": "Beginner",
-    "duration": "20 hours",
-    "price": [
-      "₹9999",
-      "₹4999"
-    ],
-    "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
-    "image": "uiux.jpg",
-    "tags": [
-      "Design",
-      "UI",
-      "UX",
-      "Figma"
-    ],
-    "outcomes": [
-      "Master Python programming from a data science perspective",
-      "Perform powerful data analysis using Pandas and NumPy",
-      "Create stunning data visualizations with Matplotlib and Seaborn",
-      "Understand and apply core statistics and probability concepts",
-      "Clean and preprocess real-world datasets for accurate insights",
-      "Work on real-life projects",
-      "Use Jupyter Notebooks for data-driven development"
-    ],
-    "curriculum": [
-      {
-        "title": "Week 1 - Python Foundations for Data Science",
-        "duration": "8 lectures",
-        "content": "• Python for Data Science: Overview & Setup<br>• Variables, Data Types & Type Casting<br>• Strings, Lists, Tuples, Sets & Dictionaries<br>• Conditional Statements & Loops<br>• Functions in Python - Definition & Usage"
-      },
-      {
-        "title": "Week 2 - Data Analysis & Visualization (Pandas + EDA)",
-        "duration": "10 lectures",
-        "content": "• Getting Started with Pandas,<br>• Core Data Structures: Series & DataFrames<br>• Creating, Modifying, Selecting & Filtering DataFrames<br>• Data Cleaning, Preprocessing & Transformation<br>• Grouping, Merging & Joining DataFrames<br>• Working with CSV & Excel Files<br>• Exploratory Data Analysis (Univariate & Bivariate)<br>• Data Visualization with Matplotlib & Seaborn"
-      },
-      {
-        "title": "Week 3 - Statistics for Data Science",
-        "duration": "8 lectures",
-        "content": "• Descriptive Statistics: Central Tendency<br>• Correlation & Covariance Analysis<br>• Hypothesis Testing: Z-test, T-test, Chi-Square<br>• Confidence Intervals & P-values<br>• Statistics Case Study: Real-world dataset analysis"
-      },
-      {
-        "title": "Week 4 - SQL for Data Science",
-        "duration": "8 lectures",
-        "content": "Introduction to Databases & SQL<br>• SELECT Statements & Filtering Data<br>• Aggregations: COUNT, SUM, AVG, MIN, MAX<br>• GROUP BY & HAVING Clauses<br>• Joins: INNER, LEFT, RIGHT, FULL<br>• Subqueries & Common Table Expressions (CTEs)<br>• SQL Case Study: Data Insights"
-      },
-      {
-        "title": "Week 5 - Machine Learning Foundations",
-        "duration": "10 lectures",
-        "content": "• Introduction to Machine Learning: Supervised & Unsupervised<br>• Regression: Linear, Decision Tree, Random Forest<br>• Classification: Logistic, Decision Tree, Random Forest<br>• Unsupervised Learning: K-Means Clustering<"
-      },
-      {
-        "title": "Week 6 - Feature Engineering & AI / Deep Learning Essentials",
-        "duration": "12 lectures",
-        "content": "• Feature Engineering (Hands-On):<br>• Feature Selection, Scaling & Normalization<br>• Encoding Categorical Features<br>• Dimensionality Reduction Basics (PCA)<br>• Neural Networks & Deep Learning:<br>• Introduction to Neural Networks & Perceptrons<br>• Activation Functions: Sigmoid, ReLU, Tanh<br>• Forward & Backward Propagation Concepts<br>• Hands-On: Train a Neural Network on MNIST<br>• NLP, Large Language Models & AI:<br>• Introduction to NLP & Applications<br>• Large Language Models (LLMs): Concepts & Use Cases<br>• Retrieval-Augmented Generation (RAG) Overview"
-      },
-      {
-        "title": "Week 7 - Data Storytelling & Power BI",
-        "duration": "8 lectures",
-        "content": "• Data Storytelling Framework: Findings → Impact → Recommendation<br>• Power BI: Connecting Data, Models & Visualizations<br>• Interactive Dashboards: Filters, Slicers & Drill-Through Techniques<br>• DAX Basics for Calculations<br>• Portfolio Preparation: Showcasing Projects<br>• Career Launchpad: Resume Building & Interview Preparation"
-      },
-      {
-        "title": "Week 8 - Capstone Projects",
-        "duration": "5 - 6 projects",
-        "content": "Python Project: Automate Data Cleaning & Preprocessing<br>• SQL Project: Data Insights Dashboard<br>• ML Project 1: Customer Churn Prediction (Classification)<br>• ML Project 2: House Price Prediction (Regression)<br>• AI Project: RAG-based Question Answering Chatbot<br>• Power BI Project: Interactive Sales Dashboard"
+        "title": "Module 8 - Capstone Projects",
+        "duration": "4 - 5 projects",
+        "content": "• SQL Project: Data Insights Dashboard<br>• R Project: Exploratory Data Analysis & Visualization with ggplot2/plotly<br>• Power BI Project: Interactive Sales Dashboard<br>•  Hands-On Practice (Implement full workflow from dataset to insights, Showcase projects in portfolio-ready format)"
       }
     ],
     "inclusions": [
