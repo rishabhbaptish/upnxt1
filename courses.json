@@ -2,9 +2,9 @@
   {
     "id": "C0001",
     "title": "Data Science",
-    "description": "A practical course covering React fundamentals to advanced patterns, with projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Step into the world of high-paying Data Science careers with confidence. This course equips you with practical skills, hands-on projects, and industry-ready knowledge from Python and SQL to Machine Learning, AI, and Power BI dashboards. Beyond coding, gain career support with resume building, LinkedIn optimization, and job guidance. Learn by doing, solve real-world problems, and showcase portfolio-ready projects. Perfect for students aiming to upskill fast, stand out to recruiters, and land their dream role in data-driven industries.",
     "level": "Telugu",
-    "paymentButton":"pl_RJttEd9SseTycf",
+    "paymentButton": "pl_RJttEd9SseTycf",
     "price": [
       "₹6999",
       "₹2999"
@@ -17,13 +17,14 @@
       "Web"
     ],
     "outcomes": [
-      "Master Python programming from a data science perspective",
-      "Perform powerful data analysis using Pandas and NumPy",
-      "Create stunning data visualizations with Matplotlib and Seaborn",
-      "Understand and apply core statistics and probability concepts",
-      "Clean and preprocess real-world datasets for accurate insights",
-      "Work on real-life projects",
-      "Use Jupyter Notebooks for data-driven development"
+      "Learn Python for data science basics",
+      "Analyze & clean data with Pandas",
+      "Visualize insights using Matplotlib & Seaborn",
+      "Apply Statistics & Hypothesis Testing",
+      "Extract insights with SQL queries",
+      "Build Machine Learning models (Regression, Classification, Clustering)",
+      "Create dashboards with Power BI",
+      "Complete Capstone Projects + Career Prep"
     ],
     "curriculum": [
       {
@@ -68,11 +69,12 @@
       }
     ],
     "inclusions": [
-      "Live Classes",
-      "Duration - 2 months",
-      "Hands on Project",
-      "Exclusive Community",
-      "Certificate of completion"
+      "30+ hours of instructor-led training",
+      "5+ real-world projects & case studies",
+      "Resume building & LinkedIn profile support",
+      "Lifetime community access & updates",
+      "Job search guidance & mock interview prep",
+      "Certificate of Completion"
     ],
     "requirements": [
       "No prior experience in data science is needed",
@@ -86,9 +88,9 @@
   {
     "id": "C0002",
     "title": "Data Analytics",
-    "description": "A practical course covering React fundamentals to advanced patterns, with projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Unlock your potential in the world of data with our comprehensive Data Analytics course. Gain hands-on experience with Python, R, SQL, Machine Learning, and Power BI while analyzing real-world datasets. Learn to clean, visualize, and interpret data effectively, and build a portfolio that impresses recruiters. Beyond technical skills, get career support, resume guidance, and LinkedIn optimization to land your dream role. Ideal for students who want to upskill quickly, solve practical problems, and excel in today's competitive, data-driven job market.",
     "level": "Telugu",
-    "paymentButton":"pl_RJttEd9SseTycf",
+    "paymentButton": "pl_RJttEd9SseTycf",
     "price": [
       "₹6999",
       "₹2999"
@@ -101,13 +103,14 @@
       "Web"
     ],
     "outcomes": [
-      "Master Python programming from a data science perspective",
-      "Perform powerful data analysis using Pandas and NumPy",
-      "Create stunning data visualizations with Matplotlib and Seaborn",
-      "Understand and apply core statistics and probability concepts",
-      "Clean and preprocess real-world datasets for accurate insights",
-      "Work on real-life projects",
-      "Use Jupyter Notebooks for data-driven development"
+      "Master Python & R programming for data analysis and visualization",
+      "Clean, preprocess, and analyze datasets using Pandas, SQL, and R",
+      "Perform Exploratory Data Analysis (EDA) and extract actionable insights",
+      "Apply statistics, hypothesis testing, and interpret real-world data",
+      "Build and evaluate Machine Learning models: regression, classification, clustering",
+      "Create interactive dashboards and data stories using Power BI",
+      "Complete capstone projects to showcase a professional portfolio",
+      "Gain career support: resume building, LinkedIn makeover, and job search guidance"
     ],
     "curriculum": [
       {
@@ -152,11 +155,12 @@
       }
     ],
     "inclusions": [
-      "Live Classes",
-      "Duration - 2 months",
-      "Hands on Project",
-      "Exclusive Community",
-      "Certificate of completion"
+      "30+ hours of instructor-led training",
+      "5+ real-world projects & case studies",
+      "Resume building & LinkedIn profile support",
+      "Lifetime community access & updates",
+      "Job search guidance & mock interview prep",
+      "Certificate of Completion"
     ],
     "requirements": [
       "No prior experience in data science is needed",
