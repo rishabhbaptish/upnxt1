@@ -20,8 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
 function addSection() {
     const main = document.createElement("div");
     main.id = "section-wrapper";
+    main.style.paddingBlock = '2rem';
+    main.style.marginBottom = '2rem';
     document.querySelector("#main").append(main);
     addAllCourses();
+    addFIP();
 }
 
 async function addAllCourses() {
@@ -38,6 +41,26 @@ async function addAllCourses() {
 
     courses.forEach(c => {
         let card = makeCard(c,1);
+        row.append(card);
+    });
+    trending.append(row)
+    document.querySelector("#section-wrapper").append(trending);
+}
+
+async function addFIP() {
+    const trending = document.createElement("section");
+    const headingSection = document.createElement("div");
+    headingSection.id = "section-heading";
+    const heading = document.createElement("div");
+    heading.innerHTML = `<h2>Future Innovators Program</h2>`;
+    headingSection.append(heading);
+    trending.append(headingSection);
+    const courses = await fetchCourses();
+    const row = document.createElement("div");
+    row.className = "courses-row";
+
+    courses.forEach(c => {
+        let card = makeCard(c);
         row.append(card);
     });
     trending.append(row)

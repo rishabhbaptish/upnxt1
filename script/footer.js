@@ -19,8 +19,7 @@ function addTagLine(){
     mainContainer.className = "com-details";
 
     mainContainer.innerHTML = `
-    <div class="tagLine">the future belongs to the</div>
-    <div class="tagLine">skilled.</div>
+    <div class="tagLine">the future belongs to the <span class="last-word">skilled.</span></div>
     `;
 
     return mainContainer;
@@ -31,9 +30,7 @@ function addDetails(){
     mainContainer.className = "com-details";
 
     mainContainer.innerHTML = `
-    <div class="logo"><span>upn<span class="text-blue">X</span>t</span></div>
-    <div class="detail">mail.id@jfkf.com</div>
-    <div class="detail">mail.id@jfkf.com</div>
+    <div class="logo"><span>about upn<span class="text-blue">X</span>t</span></div>
     `;
 
     return mainContainer;
@@ -44,10 +41,10 @@ function addAboutUs(){
     mainContainer.className = "com-details";
 
     mainContainer.innerHTML = `
-    <div class="detail">About Us</div>
-    <div class="detail">Terms & Conditions</div>
+    <div class="detail">Contact Us</div>
+    <div class="detail">support@upnxt.in</div>
+    <div class="detail">sales@upnxt.in</div>
     <div class="detail">Cancellation & Refund Policy</div>
-    <div class="detail">Shipping & Delivery Policy</div>
     `;
 
     return mainContainer;

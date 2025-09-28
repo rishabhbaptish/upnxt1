@@ -1,5 +1,4 @@
 .site-footer {
-    margin-top: 2rem;
     padding: 5%;
     background-color: var(--bg);
     color: var(--dark);
@@ -10,7 +9,7 @@
 
 .footer-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -36,14 +35,22 @@
     font-weight: 500;
 }
 
-.tagLine{
+.tagLine {
     font-weight: 800;
     font-size: 20px;
 }
 
-@media (max-width: 450px) {
+.tagLine .last-word {
+    display: block;
+}
+
+@media (max-width: 750px) {
     .footer-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .tagLine .last-word {
+        display: inline;
     }
 }

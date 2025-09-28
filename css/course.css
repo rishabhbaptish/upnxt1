@@ -144,6 +144,7 @@ div.c {
 
 
 label {
+    font-weight: 700;
     cursor: pointer;
     position: relative;
     display: flex;

@@ -6,7 +6,9 @@ function addSections() {
 
 
     (async () => {
-        await addAllCourses();;
+        // await addIntro();
+        await addAllCourses();
+        await addFIP();
         await addFAQ();
     })();
 }
@@ -31,12 +33,42 @@ async function addTrending() {
     document.querySelector("#section-wrapper").append(trending);
 }
 
+async function addImg(image) {
+    const trending = document.createElement("section");
+    trending.className = "img-container";
+    const img = document.createElement("img");
+    img.src = imgPath(image);
+    img.alt = image;
+    trending.append(img);
+    document.querySelector("#section-wrapper").append(trending);
+}
+
 async function addAllCourses() {
     const trending = document.createElement("section");
     const headingSection = document.createElement("div");
     headingSection.id = "section-heading";
     const heading = document.createElement("div");
-    heading.innerHTML = `<h2>All Courses</h2><p>Most popular courses this week</p>`;
+    heading.innerHTML = `<h2>Career-Ready Programs</h2>`;
+    headingSection.append(heading);
+    trending.append(headingSection);
+    const courses = await fetchCourses();
+    const row = document.createElement("div");
+    row.className = "courses-row";
+
+    courses.forEach(c => {
+        let card = makeCard(c);
+        row.append(card);
+    });
+    trending.append(row)
+    document.querySelector("#section-wrapper").append(trending);
+}
+
+async function addFIP() {
+    const trending = document.createElement("section");
+    const headingSection = document.createElement("div");
+    headingSection.id = "section-heading";
+    const heading = document.createElement("div");
+    heading.innerHTML = `<h2>Future Innovators Program</h2>`;
     headingSection.append(heading);
     trending.append(headingSection);
     const courses = await fetchCourses();
@@ -157,47 +189,73 @@ function makeCard(c, route = 0) {
 
 async function addFAQ() {
     const trending = document.createElement("section");
-    const headingSection = document.createElement("div");
-    headingSection.id = "section-heading";
-    const heading = document.createElement("div");
-    heading.innerHTML = `<h2>Frequently Asked Questions</h2>`;
-    headingSection.append(heading);
-    trending.append(headingSection);
-
-    const faqSection = document.createElement("div");
-    faqSection.className = "faq";
-    faqSection.innerHTML = `
-  <input id='faq-a' type='checkbox'>
-  <label for='faq-a'>
-    <p class="faq-heading">Is this Dropbox upgrade safe?</p>
-    <div class='faq-arrow'></div>
-      <p class="faq-text">It is completely safe and totally legal! There will is no record of this process to your shared Dropbox users.</p>
-  </label>
-  <input id='faq-b' type='checkbox'>
-  <label for='faq-b'>
-    <p class="faq-heading">How long does it take to upgrade my Dropbox?</p>
-    <div class='faq-arrow'></div>
-      <p class="faq-text">Upgrading is a slow process and will take around 3-10 days. <strong>In order to control the risk and secure the space you earned, we will gradually process it.</strong> during this time you can still use your account as normal as usual.</p>
-  </label>
-  <input id='faq-c' type='checkbox'>
-  <label for='faq-c'>
-    <p class="faq-heading">What do you need to do the upgrade?</p>
-    <div class='faq-arrow'></div>
-      <p class="faq-text">NO ACCESS TO YOUR PERSONAL ACCOUNT OR INFO IS REQUIRED! All I need from you is your Dropbox referral link.</p>
-  </label>
-  <input id='faq-d' type='checkbox'>
-  <label for='faq-d'>
-    <p class="faq-heading">Where do I find my personal Dropbox referral link?</p>
-    <div class='faq-arrow'></div>
-      <p class="faq-text">Log in to the Dropbox website and get your referral link: www.dropbox.com/referral. Copy the link (example link: <strong>https://db.tt/xYxYzyXy</strong>) and send it via eBay message. </p>
-  </label>
-  <input id='faq-e' type='checkbox'>
-  <label for='faq-e'>
-    <p class="faq-heading">Can I split the purchased space between several accounts?</p>
-    <div class='faq-arrow'></div>
-      <p class="faq-text">Yes, you can! Just send me all the referral links during the checkout process, including a short note, what account should receive which amount of space.</p>
-  </label>
-    `;
+    const faq = [
+        {
+            "title": "What is Upnxt?",
+            "content": "Upnxt is a career-focused learning platform that makes high-quality, job-ready education affordable and practical. We provide live interactive classes at self-paced prices, with hands-on projects, mentorship, and career support."
+        },
+        {
+            "title": "How is Upnxt different from other edtech platforms?",
+            "content": "Most edtech platforms are either too expensive or just video-based with no guidance. At Upnxt, you get:<br>Live classes with mentors<br>Affordable pricing (self-paced price for live learning)<br>Regional language support<br>Career services & community access"
+        },
+        {
+            "title": "Who can join Upnxt courses?",
+            "content": "Our courses are designed for college students, recent graduates, and working professionals who want to upskill in trending fields like Data Science, AI, and Full-Stack Development  even if you're starting with zero coding background."
+        },
+        {
+            "title": "Do you provide career support?",
+            "content": "Yes. Apart from technical training, we provide resume building, LinkedIn profile optimization, mock interviews, and job search guidance. This ensures you're not just learning, but also getting ready for real opportunities."
+        },
+        {
+            "title": "Why are Upnxt courses priced so low?",
+            "content": "We believe career-ready education should not be a luxury. By keeping costs low and focusing on scale, Upnxt makes live, mentor-led learning affordable so every student can access the skills needed to succeed in today's job market."
+        },
+    ];
+    const faqSection = createAccordion(faq, "Frequently Asked Questions");
     trending.append(faqSection);
     document.querySelector("#section-wrapper").append(trending);
 }
+
+function createAccordion(items, string) {
+    // Main card container
+    const card = document.createElement("div");
+    card.id = "box";
+    card.style.border = "none";
+    card.style.boxShadow = "none";
+    // Header
+    const header = document.createElement("div");
+    header.id = "box-header";
+    header.innerHTML = `<h2>${string}</h2>`;
+
+    // Content wrapper
+    const content = document.createElement("div");
+    content.id = "box-content1";
+
+    items.forEach((a, index) => {
+        let head = document.createElement('div');
+        head.className = 'c';
+        head.innerHTML = `<input class="course-field" type="radio" name="faq" id="faq-${index + 1}">
+  <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+  <div>${a.title}</div></div></label></h3>
+  <div class="p">
+    <p>${a.content}</p>
+  </div>`;
+        content.append(head);
+    });
+    card.append(header, content);
+    return card;
+}
+
+// async function addIntro() {
+//     const trending = document.createElement("section");
+//     const headingSection = document.createElement("div");
+//     headingSection.id = "section-heading";
+//     const heading = document.createElement("div");
+//     heading.innerHTML = `<h2>From Learning to Earning: Get Job-Ready Today</h2>`;
+//     headingSection.append(heading);
+//     trending.append(headingSection);
+//     const intro = document.createElement("div");
+//     intro.innerHTML = `At Upnxt, we make learning practical, affordable, and future-ready. Through hands-on projects, expert mentorship, and career-focused training, we equip you with the skills employers demand so you can learn, build, and succeed with confidence`;
+//     trending.append(intro);
+//     document.querySelector("#section-wrapper").append(trending);
+// }
