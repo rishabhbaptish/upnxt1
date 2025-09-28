@@ -1,4 +1,4 @@
-const COURSES_URL = '../courses.json';
+
 console.log(window.location.pathname)
 // fetch courses data
 async function fetchCourses(){
@@ -14,6 +14,7 @@ function imgPath(name){ return '../images/' + name; }
 document.addEventListener("DOMContentLoaded", function () {
     addHeader(1);
     addSection();
+    addFooter();
 });
 
 function addSection() {

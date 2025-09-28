@@ -17,7 +17,7 @@ async function addHeader(index = 0) {
   nav.className = "nav";
   const currentPage = window.location.pathname;
   nav.innerHTML = `
-    <a href="${add}" class="${currentPage === '/' ? 'active' : ''}">Home</a>
+  <a href="${add}courses" class="${currentPage === '/courses/' ? 'active' : ''}">Courses</a>
   `;
   // nav.innerHTML = `
   //   <a href="${add}" class="${currentPage === '/' ? 'active' : ''}">Home</a>

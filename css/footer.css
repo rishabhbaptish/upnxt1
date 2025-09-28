@@ -1,0 +1,49 @@
+.site-footer {
+    margin-top: 2rem;
+    padding: 5%;
+    background-color: var(--bg);
+    color: var(--dark);
+    width: 100%;
+    box-shadow: 0 -0.2px 0 var(--dark);
+
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.com-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+
+}
+
+.com-details .logo {
+    font-size: 5vh;
+}
+
+.com-details .heading {
+    font-size: 3vh;
+}
+
+.com-details .detail {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tagLine{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+@media (max-width: 450px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

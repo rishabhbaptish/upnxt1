@@ -1,4 +1,4 @@
-const COURSES_URL = '../courses.json';
+
 
 // fetch courses data
 async function fetchCourses() {
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         main.append(bannerEl, learnEl);
     })();
+    addFooter();
 });
 
 async function addBanner() {

@@ -1,7 +1,3 @@
-const COURSES_URL = './courses.json';
-const CAROUSEL_url = './carousel.json';
-const USER_URL = './user.json'; // Add this line
-
 // fetch courses data
 async function fetchCourses(){
   const res = await fetch(COURSES_URL);
@@ -29,4 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
     addHeader();
     addCarousel();
     addSections();
+    addFooter();
 });

@@ -3,16 +3,18 @@
 @import url("sections.css");
 @import url("course.css");
 @import url("login.css");
+@import url("footer.css");
 
 :root {
     --bg: #ffffff;
-    --dark: #333;
+    --dark: #333; 
+    --header: rgba(255, 255, 255, 0.95); 
+    --dark-grey: #6b7280;
     --accent: #2563eb;
     --hover-accent: oklch(0.488 0.243 264.376);
     --light-grey:oklch(97% 0 0);
     --grey: #ddd;
-    --dark-grey: #6b7280;
-    --header: rgba(255, 255, 255, 0.95);
+    --red:#dc2626;
     --shadow: rgba(0, 0, 0, 0.1) 0 4px 6px;
     --hover-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -53,8 +55,4 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-}
-
-.site-footer {
-    margin-top: 2rem;
 }

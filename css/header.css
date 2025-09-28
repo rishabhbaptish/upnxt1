@@ -22,9 +22,9 @@
   transition: transform 0.2s ease;
 }
 
-.logo:hover {
+/* .logo:hover {
   transform: scale(1.02);
-}
+} */
 
 .text-black {
   color: #000;
@@ -43,7 +43,7 @@
 
 .nav a {
   font-size: 14px;
-  color: var(--dark-grey, #6b7280);
+  color: var(--dark-grey);
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 8px;
@@ -52,13 +52,11 @@
 }
 
 .nav a.active {
-  color: var(--accent, #2563eb);
-  background: rgba(37, 99, 235, 0.1);
+  color: var(--dark);
 }
 
 .nav a:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: var(--dark, #111);
+  color: var(--dark);
 }
 
 /* Auth Section */
@@ -155,7 +153,7 @@ Avatar Circle
     flex-direction: column;
     top: 100%;
     right: 0;
-    background: white;
+    background: var(--bg);
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0.5rem 1rem;
