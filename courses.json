@@ -175,8 +175,7 @@
   },
   {
     "id": "C0003",
-    "title": "AI & Web Course for Students",
-    "subTitle":"English",
+    "title": "AI & Web Course for Students [English]",
     "description": "Step into the future with our hands-on AI & Web Development program for students! Learn to code, build real websites, create AI-powered apps, and deploy your projects online. No prior experience required by the end of this course, you'll have your own live website, multiple AI projects, and a professional portfolio to showcase your skills.",
     "level": "Telugu",
     "paymentButton": "pl_ROhepv0gI2Rb3D",
@@ -254,7 +253,7 @@
     "requirements": [
       "Basic computer skills and internet access",
       "Willingness to learn",
-      "Curiosity and consistency — that's all you really need!",
+      "Curiosity and consistency that's all you really need!",
       "Stable internet connection for accessing course content"
     ]
   }

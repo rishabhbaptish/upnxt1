@@ -30,7 +30,7 @@ function addDetails() {
     mainContainer.className = "com-details";
 
     mainContainer.innerHTML = `
-    <div class="logo"><span>about upn<span class="text-blue">X</span>t</span></div>
+    <div class="logo" style="cursor:default"><span>about upn<span class="text-blue">X</span>t</span></div>
     `;
 
     return mainContainer;
@@ -41,9 +41,9 @@ function addAboutUs() {
     mainContainer.className = "com-details";
 
     mainContainer.innerHTML = `
-    <div class="detail">Contact Us</div>
-    <div class="detail">support@upnxt.in</div>
-    <div class="detail">sales@upnxt.in</div>
+    <div>Contact Us</div>
+    <a class="mail" href="mailto:business@upnxt.in">business@upnxt.in</a>
+    <a class="mail" href="mailto:support@upnxt.in">support@upnxt.in</a>
     <div class="detail" id="terms">Cancellation & Refund Policy</div>
     `;
     mainContainer.querySelector("#terms").addEventListener("click", () => {

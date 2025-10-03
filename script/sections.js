@@ -154,11 +154,11 @@ function makeCard(c, route = 0) {
 
     const tagPrice = document.createElement("div");
     tagPrice.id = "tag-price";
-    const badge = document.createElement("span");
-    badge.className = "badge";
-    badge.id = "badge";
-    badge.innerHTML = c.level;
-    tagPrice.append(badge);
+    // const badge = document.createElement("span");
+    // badge.className = "badge";
+    // badge.id = "badge";
+    // badge.innerHTML = c.level;
+    // tagPrice.append(badge);
 
     const price = document.createElement("div");
     price.id = "price";

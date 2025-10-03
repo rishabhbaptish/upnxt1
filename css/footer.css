@@ -44,6 +44,15 @@
     display: block;
 }
 
+.mail{
+    cursor: pointer;
+    color: var(--dark);
+}
+
+.detail{
+    cursor: pointer;
+}
+
 @media (max-width: 750px) {
     .footer-container {
         flex-direction: column;

@@ -38,7 +38,7 @@ async function addBanner() {
     form.setAttribute("method", "POST");
     section.append(about);
     section.append(form);
-    about.innerHTML = `<h1>${course.title}</h1><h1>${course.subTitle}</h1>
+    about.innerHTML = `<h1>${course.title}</h1><h1>${course.subTitle || ""}</h1>
                         <p>${course.description}</p>`;
     const tagWrapper = document.createElement("div");
     tagWrapper.id = "tag-wrapper";
@@ -81,6 +81,11 @@ async function addBanner() {
     numberInput.placeholder = "Number";
     numberInput.required = true;
 
+    const courseInput = document.createElement("input");
+    courseInput.type = "hidden";
+    courseInput.name = "course";
+    courseInput.value = course.id;
+
     const captchaInput = document.createElement("input");
     captchaInput.type = "hidden";
     captchaInput.name = "_captcha";
@@ -97,7 +102,7 @@ async function addBanner() {
     successMsg.style.textAlign = "center";
 
     // Append all elements to form
-    form.append(heading, nameInput, emailInput, numberInput, captchaInput, submitBtn, successMsg);
+    form.append(heading, nameInput, emailInput, numberInput, courseInput, captchaInput, submitBtn, successMsg);
 
     // Handle form submission with fetch (no redirect)
     form.addEventListener("submit", function (e) {
