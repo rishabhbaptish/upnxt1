@@ -25,12 +25,16 @@ function renderCarousel(carouselItems) {
     <img src="${imgPath(c.image)}" alt="img-${idx}"> 
   </div>
 `;
-// slide.innerHTML = `
-//   <div class="thumb">
-//     <img src="${imgPath(c.image)}" alt="${c.title}">
-//     <div class="overlay-text">${c.title}</div>
-//   </div>
-// `;
+    slide.addEventListener("click", () => {
+      if (c.url)
+        window.location.href = `${c.url}`;
+    });
+    // slide.innerHTML = `
+    //   <div class="thumb">
+    //     <img src="${imgPath(c.image)}" alt="${c.title}">
+    //     <div class="overlay-text">${c.title}</div>
+    //   </div>
+    // `;
     carousel.appendChild(slide);
   });
 

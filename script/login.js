@@ -38,7 +38,7 @@ function createLoginForm() {
     authContainer.innerHTML = `
         <div class="auth-card">
             <div class="auth-header">
-                <h1 class="auth-title">Welcome back</h1>
+                <h1 class="auth-title">Start Learning</h1>
                 <p class="auth-subtitle">Sign in to continue your learning journey</p>
             </div>
             
@@ -195,9 +195,7 @@ async function loginWithFirebase() {
         const result = await firebaseAuth.signIn(email, password);
         
         if (result.success) {
-            alert(`Welcome back, ${result.user.username}!`);
-            // Redirect to dashboard or home page
-            window.location.href = "../index.html";
+            window.location.href = `${BASE_URL}/index.html`;
         } else {
             throw new Error(result.error);
         }

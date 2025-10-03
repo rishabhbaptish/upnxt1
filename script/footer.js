@@ -14,7 +14,7 @@ function addFooter() {
 
 }
 
-function addTagLine(){
+function addTagLine() {
     const mainContainer = document.createElement("div");
     mainContainer.className = "com-details";
 
@@ -25,7 +25,7 @@ function addTagLine(){
     return mainContainer;
 }
 
-function addDetails(){
+function addDetails() {
     const mainContainer = document.createElement("div");
     mainContainer.className = "com-details";
 
@@ -36,7 +36,7 @@ function addDetails(){
     return mainContainer;
 }
 
-function addAboutUs(){
+function addAboutUs() {
     const mainContainer = document.createElement("div");
     mainContainer.className = "com-details";
 
@@ -44,8 +44,10 @@ function addAboutUs(){
     <div class="detail">Contact Us</div>
     <div class="detail">support@upnxt.in</div>
     <div class="detail">sales@upnxt.in</div>
-    <div class="detail">Cancellation & Refund Policy</div>
+    <div class="detail" id="terms">Cancellation & Refund Policy</div>
     `;
-
+    mainContainer.querySelector("#terms").addEventListener("click", () => {
+        window.location.href = `${BASE_URL}/terms`;
+    });
     return mainContainer;
 }

@@ -30,31 +30,94 @@ async function addBanner() {
     const course = courses.find(c => c.id === courseId);
     const section = document.createElement("section");
     section.id = "course-banner";
-    section.innerHTML = `<h1>${course.title}</h1>
+    const about = document.createElement("div");
+    about.id = 'about-part';
+    const form = document.createElement("form");
+    form.id = "details-container";
+    form.setAttribute("action", "https://formsubmit.co/gorcidsemhtech@gmail.com");
+    form.setAttribute("method", "POST");
+    section.append(about);
+    section.append(form);
+    about.innerHTML = `<h1>${course.title}</h1><h1>${course.subTitle}</h1>
                         <p>${course.description}</p>`;
     const tagWrapper = document.createElement("div");
     tagWrapper.id = "tag-wrapper";
+    about.append(tagWrapper);
     // let tags = course.tags;
-    let tags = [];
-    tags.push(course.level);
-    tags.forEach(tag => {
-        const badge = document.createElement("span");
-        badge.className = "badge";
-        badge.id = "tag";
-        badge.innerHTML = tag;
-        tagWrapper.append(badge);
+    // let tags = [];
+    // tags.push(course.level);
+    // tags.forEach(tag => {
+    //     const badge = document.createElement("span");
+    //     badge.className = "badge";
+    //     badge.id = "tag";
+    //     badge.innerHTML = tag;
+    //     tagWrapper.append(badge);
+    // });
+    // const downloadButton = document.createElement("a");
+    // downloadButton.innerHTML = `Download Brochure`;
+    // tagWrapper.append(downloadButton);
+
+    const heading = document.createElement("h2");
+    heading.textContent = "Apply Now";
+
+    // Name field
+    const nameInput = document.createElement("input");
+    nameInput.type = "text";
+    nameInput.name = "name";
+    nameInput.placeholder = "Name";
+    nameInput.required = true;
+
+    // Email field
+    const emailInput = document.createElement("input");
+    emailInput.type = "email";
+    emailInput.name = "email";
+    emailInput.placeholder = "Email";
+    emailInput.required = true;
+
+    // Number field
+    const numberInput = document.createElement("input");
+    numberInput.type = "tel";
+    numberInput.name = "number";
+    numberInput.placeholder = "Number";
+    numberInput.required = true;
+
+    const captchaInput = document.createElement("input");
+    captchaInput.type = "hidden";
+    captchaInput.name = "_captcha";
+    captchaInput.value = "false";
+    // Submit button
+    const submitBtn = document.createElement("button");
+    submitBtn.type = "submit";
+    submitBtn.textContent = "Enquire Now";
+
+    // Success message (hidden by default)
+    const successMsg = document.createElement("p");
+    successMsg.textContent = "We will connect with you soon.";
+    successMsg.style.display = "none";
+    successMsg.style.textAlign = "center";
+
+    // Append all elements to form
+    form.append(heading, nameInput, emailInput, numberInput, captchaInput, submitBtn, successMsg);
+
+    // Handle form submission with fetch (no redirect)
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // stop normal form submit
+
+        const formData = new FormData(form);
+
+        fetch("https://formsubmit.co/gorcidsemhtech@gmail.com", {
+            method: "POST",
+            body: formData
+        })
+            .then(() => {
+                successMsg.style.display = "block"; // show success
+                form.reset(); // clear inputs
+            })
+            .catch(() => {
+                successMsg.textContent = "Something went wrong. Please try again.";
+                successMsg.style.display = "block";
+            });
     });
-    const downloadButton = document.createElement("a");
-    downloadButton.innerHTML = `Download Brochure`;
-    tagWrapper.append(downloadButton);
-
-
-    // const footNote = document.createElement("div");
-    // footNote.id = "foot-note";
-    // footNote.innerHTML = `<p>${course.instructor}</p>•<p>${course.language}</p>•<p>${course.level}</p>`;
-
-    section.append(tagWrapper);
-    // section.append(footNote);
 
     return section;
 }
@@ -152,13 +215,15 @@ function makePromoCard(c) {
     const banner = document.createElement("div");
     banner.id = "banner";
 
-    const iframe = document.createElement("iframe");
-    // console.log(c.preview)
-    iframe.src = toYouTubeEmbed(c.preview);
-    iframe.title = c.title;
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-    iframe.allowFullscreen = false;
-    banner.append(iframe);
+    // const iframe = document.createElement("iframe");
+    // iframe.src = toYouTubeEmbed(c.preview);
+    // iframe.title = c.title;
+    // iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    // iframe.allowFullscreen = false;
+    const img = document.createElement("img");
+    img.src = imgPath(c.image);
+    img.alt = c.image;
+    banner.append(img);
 
 
     // Content
@@ -320,9 +385,15 @@ function createAccordion(items, string) {
     items.forEach((a, index) => {
         let head = document.createElement('div');
         head.className = 'c';
+//         head.innerHTML = `<input class="course-field" type="checkbox" id="faq-${index + 1}">
+//   <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+//   <div>${a.title}</div></div><div>${a.duration}</div></label></h3>
+//   <div class="p">
+//     <p>${a.content}</p>
+//   </div>`;
         head.innerHTML = `<input class="course-field" type="checkbox" id="faq-${index + 1}">
   <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
-  <div>${a.title}</div></div><div>${a.duration}</div></label></h3>
+  <div style="font-weight:500">${a.title}</div></div></label></h3>
   <div class="p">
     <p>${a.content}</p>
   </div>`;
@@ -415,7 +486,7 @@ function openCourseModal(course) {
 
     // Inject into DOM
     cardContent.append(wrapper);
- 
+
     const priceTag = modal.querySelector(".price");
     priceTag.style.padding = '0';
     priceTag.style.fontSize = '1.25rem';
@@ -428,7 +499,7 @@ function openCourseModal(course) {
     originalPrice.textContent = course.price[0];
 
     const discounted = document.createTextNode(" " + course.price[1]);
-    
+
     priceTag.append(originalPrice, " ", discounted);
     cardContentWrapper.append(cardContent);
     // cardContentWrapper.append(priceTag);
@@ -447,9 +518,9 @@ function openCourseModal(course) {
         const user = firebase.auth().currentUser;
 
         if (!user) {
-        window.location.href = "../auth/login.html"; // replace with your sign-in page URL
-        return;
-    }
+            window.location.href = "../auth/login.html"; // replace with your sign-in page URL
+            return;
+        }
         const idToken = await user.getIdToken();
 
         const paymentForm = document.getElementById("payment-form");
@@ -480,4 +551,3 @@ function openCourseModal(course) {
     // document.getElementById("payment-form").appendChild(script);
 
 }
-

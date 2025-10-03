@@ -1,13 +1,14 @@
 [
   {
     "id": "C0001",
-    "title": "Data Science",
-    "description": "Step into the world of high-paying Data Science careers with confidence. This course equips you with practical skills, hands-on projects, and industry-ready knowledge from Python and SQL to Machine Learning, AI, and Power BI dashboards. Beyond coding, gain career support with resume building, LinkedIn optimization, and job guidance. Learn by doing, solve real-world problems, and showcase portfolio-ready projects. Perfect for students aiming to upskill fast, stand out to recruiters, and land their dream role in data-driven industries.",
+    "title": "Learn Data Science Live [English & Telugu]",
+    "subTitle":"At the Price of a Self-Paced Course",
+    "description": "Master real-world skills with interactive live classes, mentorship, and hands-on projects all for just ₹4,999. Get personal guidance from industry mentors, work on projects you can showcase to employers, and join a community of like-minded learners who keep you motivated. No boring videos or endless tutorials just practical, career-ready skills that actually get you results.",
     "level": "Telugu",
     "paymentButton": "pl_RJttEd9SseTycf",
     "price": [
       "₹6999",
-      "₹2999"
+      "₹4999"
     ],
     "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
     "image": "datasci.jpg",
@@ -87,13 +88,14 @@
   },
   {
     "id": "C0002",
-    "title": "Data Analytics",
-    "description": "Unlock your potential in the world of data with our comprehensive Data Analytics course. Gain hands-on experience with Python, R, SQL, Machine Learning, and Power BI while analyzing real-world datasets. Learn to clean, visualize, and interpret data effectively, and build a portfolio that impresses recruiters. Beyond technical skills, get career support, resume guidance, and LinkedIn optimization to land your dream role. Ideal for students who want to upskill quickly, solve practical problems, and excel in today's competitive, data-driven job market.",
+    "title": "Learn Data Analytics Live [English & Telugu]",
+    "subTitle":"From Zero to Job-Ready",
+    "description": "Master the art of turning raw data into actionable insights with interactive live classes, expert mentorship, and hands-on projects all for just ₹4999. Learn the tools top companies use, from Excel and SQL to Power BI, and work on real datasets that you can showcase to recruiters. Join a community of motivated learners, get your doubts solved in real time, and build career-ready skills that actually get results no boring videos, no wasted time.",
     "level": "Telugu",
-    "paymentButton": "pl_RJttEd9SseTycf",
+    "paymentButton": "pl_ROhaqvt87KqMIV",
     "price": [
       "₹6999",
-      "₹2999"
+      "₹4999"
     ],
     "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
     "image": "dataana.jpg",
@@ -169,6 +171,91 @@
       "Curiosity and consistency — that's all you really need!",
       "Stable internet connection for accessing course content",
       "Basic familiarity with using the terminal/command line (helpful but not required)"
+    ]
+  },
+  {
+    "id": "C0003",
+    "title": "AI & Web Course for Students",
+    "subTitle":"English",
+    "description": "Step into the future with our hands-on AI & Web Development program for students! Learn to code, build real websites, create AI-powered apps, and deploy your projects online. No prior experience required by the end of this course, you'll have your own live website, multiple AI projects, and a professional portfolio to showcase your skills.",
+    "level": "Telugu",
+    "paymentButton": "pl_ROhepv0gI2Rb3D",
+    "price": [
+      "₹4999",
+      "₹2999"
+    ],
+    "preview": "https://youtu.be/zBjJUV-lzHo?feature=shared",
+    "image": "webAi.jpg",
+    "tags": [
+      "React",
+      "Javascript",
+      "Web"
+    ],
+    "outcomes": [
+      "Basics of Python & JavaScript (coding made simple)",
+      "How to build websites with HTML, CSS, JS",      
+      "How to integrate AI tools & APIs into websites",
+      "How databases (MySQL/MongoDB) work",
+      "Prompt Engineering → using AI effectively",
+      "Deployment: how to launch your own website",
+      "How to build AI apps",
+      "Future roadmap: AI, Data Science, Web Development & Startups"
+    ],
+    "curriculum": [
+      {
+        "title": "Module 1: Coding Foundations - Python & JavaScript Made Simple",
+        "duration": "6 lectures",
+        "content": "• Learn the building blocks of coding in Python & JavaScript<br>• Write simple programs, games, and interactive scripts<br>• Mini-Project:<br>• Smart Calculator (Python)<br>• Quiz Game (JavaScript)"
+      },
+      {
+        "title": "Module 2: Web Development Basics - HTML, CSS & JavaScript",
+        "duration": "10 lectures",
+        "content": "• Understand how websites are built from scratch<br>• Add style, design, and interactivity to web pages<br>• Project: Personal Portfolio Website (About Me page)"
+      },
+      {
+        "title": "Module 3: Bringing AI to the Web - APIs & Integrations",
+        "duration": "8 lectures",
+        "content": "• Learn how websites talk to AI tools using APIs<br>• Add features like chatbots, text generators, or image AI<br>• Project: AI Chat Assistant on your portfolio website"
+      },
+      {
+        "title": "Module 4: Working with Databases (MySQL & MongoDB)",
+        "duration": "8 lectures",
+        "content": "Introduction to data storage: SQL vs NoSQL<br>• Learn how apps store, search, and manage information<br>• Project: Student Info Web App (with database support)"
+      },
+      {
+        "title": "Module 5: Prompt Engineering - Communicating with AI",
+        "duration": "10 lectures",
+        "content": "• Learn how to “talk to AI” effectively<br>• Role-based prompts, creative prompts, and structured queries<br>• Project: AI Content Generator (stories, memes, or blogs)"
+      },
+      {
+        "title": "Module 6: Deployment - Put Your Website Live on the Internet",
+        "duration": "12 lectures",
+        "content": "• Explore free hosting platforms (GitHub Pages, Netlify, Vercel)<br>• Step-by-step process to launch your site<br>• Project: Publish your portfolio website online"
+      },
+      {
+        "title": "Module 7: Building AI-Powered Applications",
+        "duration": "8 lectures",
+        "content": "• Combine Python, APIs, frontend, and databases<br>• Build end-to-end apps with real-world use cases<br>• Project Options: AI Resume Helper, AI Image Caption Generator, AI Study Buddy"
+      },
+      {
+        "title": "Module 8: Future Roadmap & Showcase",
+        "duration": "4 - 5 projects",
+        "content": "• Explore future pathways: AI, Data Science, Web Dev, Startups<br>• Learn how to showcase projects on GitHub, LinkedIn, Resume<br>• Capstone Project: Build & present a startup-style AI/Web application"
+      }
+    ],
+    "inclusions": [
+      "8-10 weeks of structured learning",
+      "Live interactive classes",
+      "70% hands-on projects, 30% concepts",
+      "Doubt-solving sessions with mentors",
+      "Portfolio support: GitHub, LinkedIn, Resume guidance",
+      "Certificate of Completion"
+    ],
+    "requirements": [
+      "Basic computer skills and internet access",
+      "Willingness to learn",
+      "Curiosity and consistency — that's all you really need!",
+      "Stable internet connection for accessing course content"
     ]
   }
 ]

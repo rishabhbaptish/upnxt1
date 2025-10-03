@@ -54,7 +54,7 @@ async function addAllCourses() {
     const courses = await fetchCourses();
     const row = document.createElement("div");
     row.className = "courses-row";
-
+    courses.pop()
     courses.forEach(c => {
         let card = makeCard(c);
         row.append(card);
@@ -76,8 +76,10 @@ async function addFIP() {
     row.className = "courses-row";
 
     courses.forEach(c => {
-        let card = makeCard(c);
-        row.append(card);
+        if (c.id == 'C0003') {
+            let card = makeCard(c);
+            row.append(card);
+        }
     });
     trending.append(row)
     document.querySelector("#section-wrapper").append(trending);

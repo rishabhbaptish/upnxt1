@@ -5,14 +5,17 @@
     },
     {
         "image": "2.png",
-        "text":"Community-based learning with live classes. Build job-ready skills at the best price & get career support to land the opportunities the market demands."
+        "text": "Community-based learning with live classes. Build job-ready skills at the best price & get career support to land the opportunities the market demands.",
+        "url": "http://127.0.0.1:5500/course/?id=C0001"
     },
     {
         "image": "3.png",
-        "text": "Data Science Course [Live Classes]<br>Now at Rs 99999 Rs 4999"
+        "text": "Data Science Course [Live Classes]<br>Now at Rs 99999 Rs 4999",
+        "url":"http://127.0.0.1:5500/course/?id=C0002"
     },
     {
         "image": "4.png",
-        "text": "Data Analyst Course [Live Classes] <br>Now at Rs 99999 Rs 4999"
+        "text": "Data Analyst Course [Live Classes] <br>Now at Rs 99999 Rs 4999",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeVUF3_U3HUHZnA0Rjkgdy5qe5doF8aGjtLLc8V-Pn0BCrLUQ/viewform?usp=header"
     }
 ]
