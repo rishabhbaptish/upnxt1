@@ -1,9 +1,10 @@
 [
   {
     "id": "C0001",
-    "title": "Learn Data Science Live [English & Telugu]",
-    "subTitle":"At the Price of a Self-Paced Course",
-    "description": "Master real-world skills with interactive live classes, mentorship, and hands-on projects all for just ₹4,999. Get personal guidance from industry mentors, work on projects you can showcase to employers, and join a community of like-minded learners who keep you motivated. No boring videos or endless tutorials just practical, career-ready skills that actually get you results.",
+    "title": "Learn Data Science Live",
+    "subTitle": "At the Price of a Self-Paced Course",
+    "tagLine": "Become Job-Ready in Data Science in Just 8 Weeks:  Even with No Experience",
+    "description": "300+ learners trained - proven results, real job outcomes<br>Live, small-group classes (limited seats per batch) <br>FREE Job Assistance & Interview Prep (worth ₹4,999) <br>Build 3 real projects  not just theory <br>Batch starts Sunday  enroll before seats fill",
     "level": "Telugu",
     "paymentButton": "pl_RJttEd9SseTycf",
     "price": [
@@ -75,22 +76,89 @@
       "Resume building & LinkedIn profile support",
       "Lifetime community access & updates",
       "Job search guidance & mock interview prep",
-      "Certificate of Completion"
+      "Certificate of Completion",
+      "FREE Interview Preparation & Job Assistance worth Rs 1999"
     ],
     "requirements": [
       "No prior experience in data science is needed",
       "Basic computer skills and internet access",
       "Willingness to learn and solve real-world problems",
-      "Curiosity and consistency — that's all you really need!",
+      "Curiosity and consistency that's all you really need!",
       "Stable internet connection for accessing course content",
       "Basic familiarity with using the terminal/command line (helpful but not required)"
+    ],
+    "reviews": [
+      {
+        "name": "Riya Sharma (Data Analyst Intern, Pune)",
+        "rating": 5,
+        "message": "Honestly, I didn't expect so much hands-on work for ₹4,999. Every session was interactive, and we built real dashboards using Power BI and SQL. The trainer explained everything so clearly  even for a beginner like me. I got shortlisted for 2 interviews within a month of finishing the course!"
+      },
+      {
+        "name": "Aditya Verma (Career Switcher, Delhi)",
+        "rating": 4,
+        "message": "I had zero experience in analytics before joining. The live classes and projects made concepts like data cleaning and visualization super easy to understand. The trainer guided us personally, and the mock interviews really boosted my confidence. Worth every rupee!"
+      },
+      {
+        "name": "Sneha Patel (B.Sc Graduate, Ahmedabad)",
+        "rating": 5,
+        "message": "I loved how practical this course was. We didn't just learn theory we worked on actual datasets and created dashboards that I now show in my resume. The 1:1 mentor feedback was the best part!"
+      },
+      {
+        "name": "Rohit Nair (Fresher, Bangalore)",
+        "rating": 5,
+        "message": "This course changed how I see data. The trainer made complex topics simple, and the projects helped me understand how analytics works in real companies. The job assistance team even helped me improve my resume!"
+      },
+      {
+        "name": "Priya Das (MBA Student, Kolkata)",
+        "rating": 5,
+        "message": "Very beginner-friendly. The batch size was small, so we got personal attention. I finally understood Python and Excel for data analytics. The hands-on assignments and project reviews gave me real confidence to apply for analyst roles."
+      }
+    ],
+    "faq": [
+      {
+        "title": "Do I need coding or technical experience to join?",
+        "content": "Not at all! This course is designed for absolute beginners. We start from scratch with Python and guide you step-by-step  even if you've never coded before. Many of our students came from non-technical backgrounds and successfully completed all projects."
+      },
+      {
+        "title": "Is this a live course or recorded videos?",
+        "content": "It's a live, instructor-led program (3 days/week, 1.5 hrs per session). You'll interact directly with mentors, ask questions, and work on projects in real-time. Missed a session? You'll get recordings for lifetime access."
+      },
+      {
+        "title": "Will I get a certificate after completion?",
+        "content": "Yes, you'll receive an industry-recognized Certificate of Completion once you finish your projects and assignments. You can proudly showcase it on LinkedIn and your resume."
+      },
+      {
+        "title": "What kind of projects will I work on?",
+        "content": "You'll complete 3 real-world projects, such as:<br>• Predictive modeling using Machine Learning<br>• Business dashboards with Power BI<br>• SQL-based data insights for analytics<br>These projects will help you build a strong portfolio that employers actually notice."
+      },
+      {
+        "title": "Will you help me get a job?",
+        "content": "Absolutely, We provide FREE Interview Preparation & Job Assistance (worth ₹4,999) including:<br>• Resume & LinkedIn optimization<br>• Mock interviews<br>• Job referral guidance and hiring updates<br>Our goal is to make you job-ready, not just course-complete."
+      },
+      {
+        "title": "What if I'm a student or working professional with limited time?",
+        "content": "No problem! Classes are 3 days a week (1.5 hours each), flexible and easy to manage with college or work.You can even catch up with recordings anytime."
+      },
+      {
+        "title": "How long will it take to complete the program?",
+        "content": "It's an 8-week intensive program, perfectly structured to take you from beginner to job-ready in just 2 months. Each week focuses on one core skill - Python, SQL, Power BI, ML, etc."
+      },
+      {
+        "title": "Is ₹4,999 the final price? Any hidden charges?",
+        "content": "No hidden charges. ₹4,999 covers everything - live classes, project mentorship, lifetime recordings, and free career support. Bonus: Enroll before this Sunday to get the Interview Toolkit free."
+      },
+      {
+        "title": "When does the next batch start?",
+        "content": "Next live batch starts this Sunday! Seats fill fast, and bonuses apply only for early enrollers. Join now and start your journey to become a Data Science professional."
+      }
     ]
   },
   {
     "id": "C0002",
-    "title": "Learn Data Analytics Live [English & Telugu]",
-    "subTitle":"From Zero to Job-Ready",
-    "description": "Master the art of turning raw data into actionable insights with interactive live classes, expert mentorship, and hands-on projects all for just ₹4999. Learn the tools top companies use, from Excel and SQL to Power BI, and work on real datasets that you can showcase to recruiters. Join a community of motivated learners, get your doubts solved in real time, and build career-ready skills that actually get results no boring videos, no wasted time.",
+    "title": "Learn Data Analytics Live",
+    "subTitle": "From Zero to Job-Ready",
+    "tagLine": "Master Job-Ready Data Analytics Skills - Learn What Companies Actually Hire For",
+    "description": "300+ learners trained proven results, real job outcomes <br>Live, small-group classes (limited seats per batch) <br>FREE Job Assistance & Interview Prep (worth ₹4,999) <br>Build 3 real business dashboards & case studies - not just theory <br>Batch starts Sunday, enroll before seats fill!",
     "level": "Telugu",
     "paymentButton": "pl_ROhaqvt87KqMIV",
     "price": [
@@ -162,20 +230,86 @@
       "Resume building & LinkedIn profile support",
       "Lifetime community access & updates",
       "Job search guidance & mock interview prep",
-      "Certificate of Completion"
+      "Certificate of Completion",
+      "FREE Interview Preparation & Job Assistance worth Rs 1999"
     ],
     "requirements": [
       "No prior experience in data science is needed",
       "Basic computer skills and internet access",
       "Willingness to learn and solve real-world problems",
-      "Curiosity and consistency — that's all you really need!",
+      "Curiosity and consistency that's all you really need!",
       "Stable internet connection for accessing course content",
       "Basic familiarity with using the terminal/command line (helpful but not required)"
+    ],
+    "reviews":[
+      {
+        "name": "Aarav Mehta (Fresher, Bangalore)",
+        "rating": 4,
+        "message": "I joined to learn Data Analytics basics but ended up building 3 real dashboards in Power BI and Excel! The trainer explained every concept so clearly and made sure we actually applied what we learned. Honestly, I didn’t expect such quality for ₹4,999."
+      },
+      {
+        "name": "Kavya Iyer (B.Com Graduate, Mumbai)",
+        "rating": 5,
+        "message": "I always thought Data Analytics was too technical, but this course changed that. Live classes, small batches, and lots of hands-on work  I could follow everything step by step. The projects we built now make my portfolio look so professional."
+      },
+      {
+        "name": "Saurabh Gupta (Career Switcher, Delhi)",
+        "rating": 4,
+        "message": "The best part? Everything was practical. From SQL to Power BI, we used real datasets and got direct mentor feedback. The trainer was super patient and helped me understand how analytics works in companies. Got my first internship offer last week!"
+      },
+      {
+        "name": "Nisha Reddy (MBA Student, Hyderabad)",
+        "rating": 4,
+        "message": "Loved the personalized attention! The live sessions were interactive, and we built dashboards that actually told business stories. The free interview prep sessions really helped me feel confident during placements."
+      },
+      {
+        "name": "Harsh Singh (Engineering Student, Pune)",
+        "rating": 5,
+        "message": "I've done a few online courses before, but this one stood out because of how interactive it was. Every concept was connected to a project. By the end, I could clean data, visualize insights, and explain my work like a pro. Totally worth it!"
+      }
+    ],
+    "faq":[
+      {
+        "title": "Do I need a technical or coding background for this course?",
+        "content": "No! This program is built for absolute beginners, even if you've never coded before. You'll learn everything step-by-step, from Excel to SQL to Power BI. Many of our top performers came from B.Com, BBA, and MBA backgrounds!"
+      },
+      {
+        "title": "Is this course live or recorded?",
+        "content": "It's a 100% live, instructor-led program (3 days/week, 1.5 hours per session). You'll interact with mentors, clear your doubts instantly, and build projects together. Don't worry you'll also get lifetime access to recordings."
+      },
+      {
+        "title": "Will I get a certificate after completing the course?",
+        "content": "Yes! You'll receive a Certificate of Completion once you finish all modules and projects. It's perfect for adding to your LinkedIn and resume to stand out during placements."
+      },
+      {
+        "title": "What projects will I work on?",
+        "content": "You'll complete 3 real-world Data Analytics projects, such as:<br>• Sales Dashboard using Power BI<br>• SQL-based business insights<br>• Excel automation for analytics reporting<br>These projects will help you build a portfolio employers trust."
+      },
+      {
+        "title": "Will you help me get a job or internship?",
+        "content": "You'll get FREE Job Assistance & Interview Preparation (worth ₹4,999), including:<br>• Resume & LinkedIn optimization<br>• Mock interviews with feedback<br>• Job referral updates<br>Our goal is to make you employable, not just certified."
+      },
+      {
+        "title": "I'm a student / working professional can I manage the schedule?",
+        "content": "Yes! Classes are conducted 3 days a week (1.5 hours each) designed to fit your college or work schedule. Missed a class? You'll have access to the recordings anytime."
+      },
+      {
+        "title": "How long is the program?",
+        "content": "This is an 8-week intensive course, focused on real learning outcomes. Each week covers a new topic - Excel, SQL, Power BI, and hands-on business analytics projects."
+      },
+      {
+        "title": "Is ₹4,999 the total cost or are there any hidden fees?",
+        "content": "No hidden charges ₹4,999 is all-inclusive. You'll get:<br>• Live classes<br>• Project mentorship<br>• Lifetime recordings<br>• Free career assistance<br>Enroll before Sunday to get the Interview Toolkit & Resume Templates FREE."
+      },
+      {
+        "title": "When does the next batch start?",
+        "content": "Next live batch starts this Sunday! Seats are filling up fast, join now to secure your spot and unlock your free bonuses. Start your journey to becoming a Data Analyst today!"
+      }
     ]
   },
   {
     "id": "C0003",
-    "title": "AI & Web Course for Students [English]",
+    "title": "AI & Web Course for Students",
     "description": "Step into the future with our hands-on AI & Web Development program for students! Learn to code, build real websites, create AI-powered apps, and deploy your projects online. No prior experience required by the end of this course, you'll have your own live website, multiple AI projects, and a professional portfolio to showcase your skills.",
     "level": "Telugu",
     "paymentButton": "pl_ROhepv0gI2Rb3D",
@@ -192,7 +326,7 @@
     ],
     "outcomes": [
       "Basics of Python & JavaScript (coding made simple)",
-      "How to build websites with HTML, CSS, JS",      
+      "How to build websites with HTML, CSS, JS",
       "How to integrate AI tools & APIs into websites",
       "How databases (MySQL/MongoDB) work",
       "Prompt Engineering → using AI effectively",

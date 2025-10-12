@@ -1,4 +1,4 @@
-# upnXT Project
+# upnXt Project
 
 A modern learning platform built with Firebase authentication and a clean, responsive UI.
 

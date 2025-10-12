@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     addHeader(1);
     addSection();
     addFooter();
+    addContact();
 });
 
 function addSection() {

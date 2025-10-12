@@ -1,4 +1,13 @@
+const startDate = new Date("2025-10-13T00:00:00");
+const endDate = new Date("2025-10-19T00:00:00");
+const startSeats = 50;
+const endSeats = 5;
+const totalDuration = endDate - startDate;
 
+// Generate schedule once
+let schedule;
+let lastSeats = startSeats;
+const scheduleKey = `seatSchedule_${startDate.getTime()}_${endDate.getTime()}`;
 
 // fetch courses data
 async function fetchCourses() {
@@ -12,15 +21,38 @@ function imgPath(name) { return '../images/' + name; }
 // Append to body (or any container)
 
 document.addEventListener("DOMContentLoaded", function () {
+    schedule = JSON.parse(localStorage.getItem(scheduleKey));
+
+    if (!schedule) {
+        schedule = [];
+        let remainingSeats = startSeats;
+        const totalDrops = 20;
+
+        for (let i = 0; i < totalDrops - 1; i++) {
+            const dropAmount = Math.floor(Math.random() * 3) + 1;
+            remainingSeats -= dropAmount;
+            if (remainingSeats <= endSeats) break;
+
+            const dropTime = startDate.getTime() + (i / totalDrops) * (endDate - startDate) + Math.random() * ((endDate - startDate) / totalDrops);
+            schedule.push({ time: dropTime, seats: remainingSeats });
+        }
+
+        schedule.push({ time: endDate.getTime(), seats: endSeats });
+        localStorage.setItem(scheduleKey, JSON.stringify(schedule));
+    }
+
     const main = document.querySelector(".main");
     addHeader(1);
     (async () => {
         const bannerEl = await addBanner();
         const learnEl = await content();
-
         main.append(bannerEl, learnEl);
+
+        addFooter();
+        addContact();
+        updateSeats();
+        setInterval(updateSeats, 60 * 1000);
     })();
-    addFooter();
 });
 
 async function addBanner() {
@@ -38,7 +70,7 @@ async function addBanner() {
     form.setAttribute("method", "POST");
     section.append(about);
     section.append(form);
-    about.innerHTML = `<h1>${course.title}</h1><h1>${course.subTitle || ""}</h1>
+    about.innerHTML = `<h1>${course.tagLine || course.title}</h1><h1>${course.subTitle || ""}</h1>
                         <p>${course.description}</p>`;
     const tagWrapper = document.createElement("div");
     tagWrapper.id = "tag-wrapper";
@@ -140,21 +172,62 @@ async function content() {
     textSection.id = "text-section";
 
     const promoCard = makePromoCard(course);
-    // const promoCard = document.createElement("div");
-    // promoCard.id = "text-section";
+    const outcome = course.outcomes && createTickSection(course.outcomes, "What you'll learn");
+    const curriculum = course.curriculum && createCurr(course.curriculum, "Curriculum");
+    // const requirements = course.requirements && createDotSection(course.requirements, "Requirements");
+    const faq = course.faq && createFAQ(course.faq, "Frequently Asked Questions");
+    const reviewSection = course.reviews && createReviewSection(course.reviews, "Here's the kind of feedback our students tell us…");
+    if (course.reviews) enableViewMore(reviewSection, 3);
 
-    const outcome = createTickSection(course.outcomes, "What you'll learn");
-    // const outcome1 = createDotSection(course.curriculum, "Curriculum");
-    const curriculum = createAccordion(course.curriculum, "Curriculum");
-    const requirements = createDotSection(course.requirements, "Requirements");
-
-    textSection.append(outcome);
-    textSection.append(curriculum);
-    textSection.append(requirements);
+    if (outcome) textSection.append(outcome);
+    if (curriculum) textSection.append(curriculum);
+    if (reviewSection) textSection.append(reviewSection);
+    //if(requirements) textSection.append(requirements);
+    if (faq) textSection.append(faq);
 
     mainPart.append(textSection);
     mainPart.append(promoCard);
     return mainPart;
+}
+
+function createReviewSection(reviews, string) {
+    // Main card container
+    const card = document.createElement("div");
+    card.id = "box";
+
+    // Header
+    const header = document.createElement("div");
+    header.id = "box-header";
+    header.innerHTML = `<h2>${string}</h2>`;
+
+    // Content wrapper
+    const content = document.createElement("div");
+    content.id = "box-content";
+    content.className = "reviews-container";
+
+    // Create and append review cards
+    reviews.forEach(r => {
+        const card = document.createElement("div");
+        card.className = "review-card";
+
+        const stars = "★".repeat(r.rating) + "☆".repeat(5 - r.rating);
+
+        card.innerHTML = `
+      <div class="review-header">
+        <div>
+          <div class="review-name">${r.name}</div>
+          <div class="stars">${stars}</div>
+        </div>
+      </div>
+      <div class="review-text">${r.message}</div>
+    `;
+
+        content.appendChild(card);
+    });
+
+    card.append(header, content);
+
+    return card;
 }
 
 function createTickSection(items, string) {
@@ -305,9 +378,12 @@ function makePromoCard(c) {
         openCourseModal(c);
     });
 
+    const hurry = document.createElement("div");
+    hurry.id = 'seatsLeft';
     // Assemble
     cardContentWrapper.append(priceTag);
     cardContentWrapper.append(enroll);
+    cardContentWrapper.append(hurry);
     cardContentWrapper.append(cardContent);
 
 
@@ -372,7 +448,7 @@ function createDotSection(items, string) {
 
 }
 
-function createAccordion(items, string) {
+function createCurr(items, string) {
     // Main card container
     const card = document.createElement("div");
     card.id = "box";
@@ -390,14 +466,14 @@ function createAccordion(items, string) {
     items.forEach((a, index) => {
         let head = document.createElement('div');
         head.className = 'c';
-//         head.innerHTML = `<input class="course-field" type="checkbox" id="faq-${index + 1}">
-//   <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
-//   <div>${a.title}</div></div><div>${a.duration}</div></label></h3>
-//   <div class="p">
-//     <p>${a.content}</p>
-//   </div>`;
-        head.innerHTML = `<input class="course-field" type="checkbox" id="faq-${index + 1}">
-  <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+        //         head.innerHTML = `<input class="course-field" type="checkbox" id="faq-${index + 1}">
+        //   <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+        //   <div>${a.title}</div></div><div>${a.duration}</div></label></h3>
+        //   <div class="p">
+        //     <p>${a.content}</p>
+        //   </div>`;
+        head.innerHTML = `<input class="course-field" type="checkbox" id="cur-${index + 1}">
+  <h3 class="head"><label for="cur-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
   <div style="font-weight:500">${a.title}</div></div></label></h3>
   <div class="p">
     <p>${a.content}</p>
@@ -555,4 +631,83 @@ function openCourseModal(course) {
     // script.async = true;
     // document.getElementById("payment-form").appendChild(script);
 
+}
+
+function enableViewMore(section, initialCount = 3) {
+    const reviews = section.querySelectorAll(".review-card");
+    if (reviews.length <= initialCount) return;
+
+    // Hide the extra ones
+    reviews.forEach((r, i) => {
+        if (i >= initialCount) r.style.display = "none";
+    });
+
+    const button = document.createElement("button");
+    button.className = "view-more-btn";
+    button.textContent = "View More";
+
+    button.onclick = () => {
+        const hidden = [...reviews].filter(r => r.style.display === "none");
+        if (hidden.length > 0) {
+            hidden.forEach(r => (r.style.display = "block"));
+            button.textContent = "Show Less";
+        } else {
+            reviews.forEach((r, i) => {
+                if (i >= initialCount) r.style.display = "none";
+            });
+            button.textContent = "View More";
+        }
+    };
+
+    section.appendChild(button);
+}
+
+function createFAQ(items, string) {
+    // Main card container
+    const card = document.createElement("div");
+    card.id = "box";
+    card.style.border = "none";
+    card.style.boxShadow = "none";
+    // Header
+    const header = document.createElement("div");
+    header.id = "box-header";
+    header.innerHTML = `<h2>${string}</h2>`;
+
+    // Content wrapper
+    const content = document.createElement("div");
+    content.id = "box-content1";
+
+    items.forEach((a, index) => {
+        let head = document.createElement('div');
+        head.className = 'c';
+        head.innerHTML = `<input class="course-field" type="radio" name="faq" id="faq-${index + 1}">
+  <h3 class="head"><label for="faq-${index + 1}"> <div class="icon-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 text-primary dark:text-primary flex-shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+  <div>${a.title}</div></div></label></h3>
+  <div class="p">
+    <p>${a.content}</p>
+  </div>`;
+        content.append(head);
+    });
+    card.append(header, content);
+    return card;
+}
+
+function updateSeats() {
+    if (!schedule) return;
+
+    const now = new Date().getTime();
+    let seatsLeft = startSeats;
+
+    for (const point of schedule) {
+        if (now >= point.time) seatsLeft = point.seats;
+    }
+
+    // Prevent increasing
+    seatsLeft = Math.min(lastSeats, seatsLeft);
+    lastSeats = seatsLeft;
+    const params = new URLSearchParams(window.location.search);
+    const courseId = params.get("id");
+    if(courseId != 'C0003')
+        document.getElementById("seatsLeft").textContent =
+            `Only ${seatsLeft} seats left!`;
 }

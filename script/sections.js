@@ -193,15 +193,15 @@ async function addFAQ() {
     const trending = document.createElement("section");
     const faq = [
         {
-            "title": "What is Upnxt?",
-            "content": "Upnxt is a career-focused learning platform that makes high-quality, job-ready education affordable and practical. We provide live interactive classes at self-paced prices, with hands-on projects, mentorship, and career support."
+            "title": "What is UpnXt?",
+            "content": "UpnXt is a career-focused learning platform that makes high-quality, job-ready education affordable and practical. We provide live interactive classes at self-paced prices, with hands-on projects, mentorship, and career support."
         },
         {
-            "title": "How is Upnxt different from other edtech platforms?",
-            "content": "Most edtech platforms are either too expensive or just video-based with no guidance. At Upnxt, you get:<br>Live classes with mentors<br>Affordable pricing (self-paced price for live learning)<br>Regional language support<br>Career services & community access"
+            "title": "How is UpnXt different from other edtech platforms?",
+            "content": "Most edtech platforms are either too expensive or just video-based with no guidance. At UpnXt, you get:<br>Live classes with mentors<br>Affordable pricing (self-paced price for live learning)<br>Regional language support<br>Career services & community access"
         },
         {
-            "title": "Who can join Upnxt courses?",
+            "title": "Who can join UpnXt courses?",
             "content": "Our courses are designed for college students, recent graduates, and working professionals who want to upskill in trending fields like Data Science, AI, and Full-Stack Development  even if you're starting with zero coding background."
         },
         {
@@ -209,8 +209,8 @@ async function addFAQ() {
             "content": "Yes. Apart from technical training, we provide resume building, LinkedIn profile optimization, mock interviews, and job search guidance. This ensures you're not just learning, but also getting ready for real opportunities."
         },
         {
-            "title": "Why are Upnxt courses priced so low?",
-            "content": "We believe career-ready education should not be a luxury. By keeping costs low and focusing on scale, Upnxt makes live, mentor-led learning affordable so every student can access the skills needed to succeed in today's job market."
+            "title": "Why are UpnXt courses priced so low?",
+            "content": "We believe career-ready education should not be a luxury. By keeping costs low and focusing on scale, UpnXt makes live, mentor-led learning affordable so every student can access the skills needed to succeed in today's job market."
         },
     ];
     const faqSection = createAccordion(faq, "Frequently Asked Questions");
@@ -257,7 +257,7 @@ function createAccordion(items, string) {
 //     headingSection.append(heading);
 //     trending.append(headingSection);
 //     const intro = document.createElement("div");
-//     intro.innerHTML = `At Upnxt, we make learning practical, affordable, and future-ready. Through hands-on projects, expert mentorship, and career-focused training, we equip you with the skills employers demand so you can learn, build, and succeed with confidence`;
+//     intro.innerHTML = `At UpnXt, we make learning practical, affordable, and future-ready. Through hands-on projects, expert mentorship, and career-focused training, we equip you with the skills employers demand so you can learn, build, and succeed with confidence`;
 //     trending.append(intro);
 //     document.querySelector("#section-wrapper").append(trending);
 // }

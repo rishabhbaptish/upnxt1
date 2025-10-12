@@ -30,9 +30,11 @@ function addDetails() {
     mainContainer.className = "com-details";
 
     mainContainer.innerHTML = `
-    <div class="logo" style="cursor:default"><span>about upn<span class="text-blue">X</span>t</span></div>
+    <div class="logo" style="cursor:pointer"><span>about upn<span class="text-blue">X</span>t</span></div>
     `;
-
+    mainContainer.addEventListener("click", () => {
+        window.location.href = `${BASE_URL}/about`;
+    });
     return mainContainer;
 }
 

@@ -4,19 +4,21 @@
 @import url("course.css");
 @import url("login.css");
 @import url("footer.css");
+@import url("contact.css");
+@import url("reviews.css");
 
 :root {
     --bg: #ffffff;
-    --dark: #333; 
-    --header: rgba(255, 255, 255, 0.95); 
+    --dark: #333;
+    --header: rgba(255, 255, 255, 0.95);
     --dark-grey: #6b7280;
     --accent: #2563eb;
     --hover-accent: oklch(0.488 0.243 264.376);
-    --light-grey:oklch(97% 0 0);
+    --light-grey: oklch(97% 0 0);
     --grey: #ddd;
-    --red:#dc2626;
+    --red: #dc2626;
     --shadow: rgba(0, 0, 0, 0.1) 0 4px 6px;
-    --hover-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --hover-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 * {
@@ -57,7 +59,7 @@ body {
     border-radius: 12px;
 }
 
-#terms-container{
+#terms-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -67,6 +69,23 @@ body {
     gap: 1rem;
 }
 
-#terms-container h1{
+#terms-container h1 {
     color: var(--accent);
+}
+
+#img-container1 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#recognition {
+    padding: 0% 2%;
+}
+
+#recognition p {
+    text-align: left;
+    margin-bottom: 2%;
+    font-size: 18px;
+    font-weight: 600;
 }
