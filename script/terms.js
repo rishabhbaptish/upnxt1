@@ -13,6 +13,7 @@ function addTerms() {
     <p>Please note that we do not offer refunds once you started the class.</p>
     <p>The enrollment fee is non-refundable under any circumstances after the commencement of the course.</p>
     <p>We encourage students to review all course details carefully before enrolling.</p>
-    <p>If you have any questions prior to joining, our team is always available to assist you.</p>`;
+    <p>If you have any questions prior to joining, our team is always available to assist you.</p>
+    <p>For more information, <a href="https://merchant.razorpay.com/policy/RJYiTfjiLhfxN5/terms">click here</a>.`;
     main.append(terms);
 }

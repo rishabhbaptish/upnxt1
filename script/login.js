@@ -195,7 +195,7 @@ async function loginWithFirebase() {
         const result = await firebaseAuth.signIn(email, password);
         
         if (result.success) {
-            window.location.href = `${BASE_URL}/index.html`;
+            window.location.href = "https://upnxt.in";
         } else {
             throw new Error(result.error);
         }
